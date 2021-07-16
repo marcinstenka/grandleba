@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/grandleba/static/css/main.804e3ffb.chunk.css",
+    "main.js": "/grandleba/static/js/main.ece7f21c.chunk.js",
+    "main.js.map": "/grandleba/static/js/main.ece7f21c.chunk.js.map",
+    "runtime-main.js": "/grandleba/static/js/runtime-main.be830745.js",
+    "runtime-main.js.map": "/grandleba/static/js/runtime-main.be830745.js.map",
+    "static/js/2.0455c80a.chunk.js": "/grandleba/static/js/2.0455c80a.chunk.js",
+    "static/js/2.0455c80a.chunk.js.map": "/grandleba/static/js/2.0455c80a.chunk.js.map",
+    "index.html": "/grandleba/index.html",
+    "static/css/main.804e3ffb.chunk.css.map": "/grandleba/static/css/main.804e3ffb.chunk.css.map",
+    "static/js/2.0455c80a.chunk.js.LICENSE.txt": "/grandleba/static/js/2.0455c80a.chunk.js.LICENSE.txt",
+    "static/media/logo.393c0ae5.png": "/grandleba/static/media/logo.393c0ae5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be830745.js",
+    "static/js/2.0455c80a.chunk.js",
+    "static/css/main.804e3ffb.chunk.css",
+    "static/js/main.ece7f21c.chunk.js"
+  ]
+}
