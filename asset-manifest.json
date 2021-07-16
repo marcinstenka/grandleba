@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/grandleba/static/css/main.804e3ffb.chunk.css",
-    "main.js": "/grandleba/static/js/main.ece7f21c.chunk.js",
-    "main.js.map": "/grandleba/static/js/main.ece7f21c.chunk.js.map",
+    "main.js": "/grandleba/static/js/main.de68a8a4.chunk.js",
+    "main.js.map": "/grandleba/static/js/main.de68a8a4.chunk.js.map",
     "runtime-main.js": "/grandleba/static/js/runtime-main.be830745.js",
     "runtime-main.js.map": "/grandleba/static/js/runtime-main.be830745.js.map",
     "static/js/2.0455c80a.chunk.js": "/grandleba/static/js/2.0455c80a.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.be830745.js",
     "static/js/2.0455c80a.chunk.js",
     "static/css/main.804e3ffb.chunk.css",
-    "static/js/main.ece7f21c.chunk.js"
+    "static/js/main.de68a8a4.chunk.js"
   ]
 }
