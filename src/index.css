@@ -1,13 +1,156 @@
+/* 
+  1. Global styles
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@400;700&display=swap');
+:root {
+  --bg: #fff9f9;
+  --brown: #654a38;
+  --footer: #486788;
+  --header: #66707a;
+}
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lato';
+  background: var(--bg);
+  line-height: 1.3;
+}
+#root {
+  overflow: hidden;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+/* 
+  2. Mobile styles
+*/
+.navbar-mobile {
+  width: 100vw;
+  height: 60px;
+  background: var(--footer);
+  position: fixed;
+  top: 0;
+  transition: 0.3s;
+  z-index: 10;
+}
+.navbar-mobile.active {
+  background: var(--bg);
+}
+.navbar__checkbox {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 35px;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mobile__hamburger {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 35px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger__line {
+  width: 100%;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+.mobile__hamburger.active .hamburger__line {
+  background: var(--footer);
+}
+.mobile__hamburger.active .hamburger__line-top {
+  transform: translate(0, 11px) rotate(45deg);
+}
+.mobile__hamburger.active .hamburger__line-mid {
+  opacity: 0;
+}
+.mobile__hamburger.active .hamburger__line-bottom {
+  transform: translate(0, -11px) rotate(-45deg);
+}
+
+/* 2.1 Mobile Menu */
+
+.mobile-menu {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background: var(--bg);
+  position: fixed;
+  top: 60px;
+  left: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  flex-direction: column;
+  z-index: 10;
+}
+.mobile-menu.active {
+  transform: translate(-100vw, 0);
+}
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.mobile-menu li {
+  margin: 15px 0;
+  text-align: center;
+}
+.mobile-menu a {
+  color: var(--footer);
+  font-size: 22px;
+}
+
+.menu-logo {
+  width: 250px;
+  margin: 30px 0 100px 0;
+}
+.menu-logo h3 {
+  font-size: 12px;
+  font-weight: normal;
+  color: var(--brown);
+  text-align: center;
+}
+
+/* 2.3 Hero */
+.hero-container {
+  margin: 70px 0 0 0;
+}
+.hero-logo,
+.hero-logo h3 {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.hero-logo h3 {
+  font-size: 12px;
+  font-weight: normal;
+  color: var(--brown);
+  text-align: center;
 }
