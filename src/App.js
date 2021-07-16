@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Hotel from './Pages/Hotel';
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/grandleba/">
       <Switch>
         <Route exact path="/" component={Hotel} />
         {/* <Route exact path="/o-mnie" component={About} />
