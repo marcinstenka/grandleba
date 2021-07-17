@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/grandleba/static/css/main.af0d2e12.chunk.css",
+    "main.css": "/grandleba/static/css/main.096a803c.chunk.css",
     "main.js": "/grandleba/static/js/main.9edc3989.chunk.js",
     "main.js.map": "/grandleba/static/js/main.9edc3989.chunk.js.map",
     "runtime-main.js": "/grandleba/static/js/runtime-main.be830745.js",
@@ -10,7 +10,7 @@
     "static/js/2.903b3357.chunk.js.map": "/grandleba/static/js/2.903b3357.chunk.js.map",
     "index.html": "/grandleba/index.html",
     "static/css/2.fd0c640a.chunk.css.map": "/grandleba/static/css/2.fd0c640a.chunk.css.map",
-    "static/css/main.af0d2e12.chunk.css.map": "/grandleba/static/css/main.af0d2e12.chunk.css.map",
+    "static/css/main.096a803c.chunk.css.map": "/grandleba/static/css/main.096a803c.chunk.css.map",
     "static/js/2.903b3357.chunk.js.LICENSE.txt": "/grandleba/static/js/2.903b3357.chunk.js.LICENSE.txt",
     "static/media/hero-image1.8980296f.jpg": "/grandleba/static/media/hero-image1.8980296f.jpg",
     "static/media/hero-image2.0481d344.jpg": "/grandleba/static/media/hero-image2.0481d344.jpg",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.be830745.js",
     "static/css/2.fd0c640a.chunk.css",
     "static/js/2.903b3357.chunk.js",
-    "static/css/main.af0d2e12.chunk.css",
+    "static/css/main.096a803c.chunk.css",
     "static/js/main.9edc3989.chunk.js"
   ]
 }
