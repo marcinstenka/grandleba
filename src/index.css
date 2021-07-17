@@ -179,6 +179,9 @@ img {
     top: -11%;
   }
 }
+.hero-welcome {
+  margin: 15px 0 0 0;
+}
 .hero-welcome h1,
 .hero-welcome h3 {
   margin: 0 auto;
@@ -297,7 +300,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.footer-section1 svg {
+.icon-wrapper svg {
   font-size: 20px;
   margin: 0 5px 0 0;
 }
