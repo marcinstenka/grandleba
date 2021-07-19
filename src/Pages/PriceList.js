@@ -177,7 +177,7 @@ const PriceList = () => {
             </div>
           </div>
           <p>* pokój o mniejszym metrażu, skosy</p>
-          <h3 className="mobile-table-header">Terminy</h3>
+          <h3 className="header">Sezony</h3>
           <div className="mobile-table">
             <div className="mobile-table-item">
               <h4>Sezon niski</h4>
