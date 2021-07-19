@@ -25,10 +25,10 @@ const NavbarMobile = () => {
             <Link to="/cennik">Cennik</Link>
           </li>
           <li>
-            <Link to="">Oferta Specjalna</Link>
+            <Link to="/dla-grup">Oferta Specjalna</Link>
           </li>
           <li>
-            <Link to="">Bezpieczny pobyt</Link>
+            <Link to="/bezpieczny-pobyt">Bezpieczny pobyt</Link>
           </li>
         </ul>
         <div className="menu-logo">

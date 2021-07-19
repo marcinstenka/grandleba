@@ -58,6 +58,9 @@ img {
   padding: 15px;
   color: var(--brown);
 }
+.text a {
+  color: var(--brown);
+}
 /* 
   2. Mobile styles
 */
@@ -484,4 +487,35 @@ footer {
 }
 .price-list-text p {
   padding: 10px 15px 0 15px;
+}
+
+/* 2.7 For Groups */
+
+.for-groups-header {
+  font-size: 28px !important;
+}
+
+/* 2.8 Safe Stay */
+.safe-stay-text {
+  padding: 15px 15px 5px 25px;
+  font-size: calc(var(--mainFontSize) + 1px);
+}
+.safe-stay-list {
+  padding: 0 15px 0 45px;
+  list-style: none;
+  line-height: 1.5;
+}
+/* color of list's bullets */
+.safe-stay-list li {
+  font-size: calc(var(--mainFontSize) - 2px);
+  color: var(--brown);
+  margin: 7px 0;
+}
+.safe-stay-list li:before {
+  content: '\2022';
+  color: var(--brown);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-weight: bold;
 }
