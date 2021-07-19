@@ -8,6 +8,7 @@
   --blue: #486788;
   --header: #66707a;
   --white: #fff;
+  --mainFontSize: 16px;
 }
 * {
   box-sizing: border-box;
@@ -16,7 +17,7 @@ body {
   margin: 0;
   font-family: 'Lato';
   background: var(--bg);
-  line-height: 1.3;
+  line-height: 1.4;
 }
 #root {
   overflow: hidden;
@@ -38,6 +39,24 @@ a {
 }
 img {
   width: 100%;
+}
+.container {
+  margin: 70px 0 0 0;
+  padding: 0 0 35px 0;
+}
+.header {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: var(--brown);
+}
+.text {
+  padding: 15px;
+  color: var(--brown);
 }
 /* 
   2. Mobile styles
@@ -143,17 +162,14 @@ img {
 }
 
 /* 2.3 Hero */
-.hero-container {
-  margin: 70px 0 0 0;
-  padding: 0 0 35px 0;
-}
-.hero-logo,
-.hero-logo h3 {
+
+.mobile-logo,
+.mobile-logo h3 {
   max-width: 250px;
   margin: 0 auto;
 }
 
-.hero-logo h3 {
+.mobile-logo h3 {
   font-size: 12px;
   font-weight: normal;
   color: var(--brown);
@@ -225,6 +241,7 @@ img {
   text-align: center;
   padding: 0 15px;
   color: #b6b6b6;
+  font-size: var(--mainFontSize);
 }
 .hero-info {
   margin: 30px 0 0 0;
@@ -268,9 +285,10 @@ img {
   color: var(--brown);
   margin: 15px 0 0 0;
   text-align: justify;
+  font-size: var(--mainFontSize);
 }
 
-/* 2.4 blue */
+/* 2.4 Footer */
 
 footer {
   display: flex;
@@ -340,4 +358,20 @@ footer {
   font-size: 16px;
   text-align: center;
   padding: 0 15px 50px 15px;
+}
+
+/* 2.5 Rooms */
+
+.rooms-info {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  font-size: calc(var(--mainFontSize) - 1px);
+  line-height: 1.5;
+  color: var(--brown);
+  border-bottom: 0.5px solid #dedede;
+}
+
+.text-rooms {
+  padding-top: 20px;
 }

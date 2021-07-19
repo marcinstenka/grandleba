@@ -16,10 +16,10 @@ const NavbarMobile = () => {
             <Link to="/">Hotel</Link>
           </li>
           <li>
-            <Link to="">Pokoje</Link>
+            <Link to="/pokoje">Pokoje</Link>
           </li>
           <li>
-            <Link to="">DrinkBar</Link>
+            <Link to="/restauracja">DrinkBar</Link>
           </li>
           <li>
             <Link to="">Cennik</Link>
