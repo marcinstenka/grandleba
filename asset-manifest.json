@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/grandleba/static/css/main.096a803c.chunk.css",
-    "main.js": "/grandleba/static/js/main.9edc3989.chunk.js",
-    "main.js.map": "/grandleba/static/js/main.9edc3989.chunk.js.map",
+    "main.css": "/grandleba/static/css/main.bf0c855a.chunk.css",
+    "main.js": "/grandleba/static/js/main.47272d06.chunk.js",
+    "main.js.map": "/grandleba/static/js/main.47272d06.chunk.js.map",
     "runtime-main.js": "/grandleba/static/js/runtime-main.be830745.js",
     "runtime-main.js.map": "/grandleba/static/js/runtime-main.be830745.js.map",
     "static/css/2.fd0c640a.chunk.css": "/grandleba/static/css/2.fd0c640a.chunk.css",
-    "static/js/2.903b3357.chunk.js": "/grandleba/static/js/2.903b3357.chunk.js",
-    "static/js/2.903b3357.chunk.js.map": "/grandleba/static/js/2.903b3357.chunk.js.map",
+    "static/js/2.286257d5.chunk.js": "/grandleba/static/js/2.286257d5.chunk.js",
+    "static/js/2.286257d5.chunk.js.map": "/grandleba/static/js/2.286257d5.chunk.js.map",
     "index.html": "/grandleba/index.html",
     "static/css/2.fd0c640a.chunk.css.map": "/grandleba/static/css/2.fd0c640a.chunk.css.map",
-    "static/css/main.096a803c.chunk.css.map": "/grandleba/static/css/main.096a803c.chunk.css.map",
-    "static/js/2.903b3357.chunk.js.LICENSE.txt": "/grandleba/static/js/2.903b3357.chunk.js.LICENSE.txt",
+    "static/css/main.bf0c855a.chunk.css.map": "/grandleba/static/css/main.bf0c855a.chunk.css.map",
+    "static/js/2.286257d5.chunk.js.LICENSE.txt": "/grandleba/static/js/2.286257d5.chunk.js.LICENSE.txt",
     "static/media/hero-image1.8980296f.jpg": "/grandleba/static/media/hero-image1.8980296f.jpg",
     "static/media/hero-image2.0481d344.jpg": "/grandleba/static/media/hero-image2.0481d344.jpg",
     "static/media/hero-image3.2d4e027a.jpg": "/grandleba/static/media/hero-image3.2d4e027a.jpg",
-    "static/media/logo.393c0ae5.png": "/grandleba/static/media/logo.393c0ae5.png"
+    "static/media/logo.393c0ae5.png": "/grandleba/static/media/logo.393c0ae5.png",
+    "static/media/restaurant-image.c6c85365.jpg": "/grandleba/static/media/restaurant-image.c6c85365.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.be830745.js",
     "static/css/2.fd0c640a.chunk.css",
-    "static/js/2.903b3357.chunk.js",
-    "static/css/main.096a803c.chunk.css",
-    "static/js/main.9edc3989.chunk.js"
+    "static/js/2.286257d5.chunk.js",
+    "static/css/main.bf0c855a.chunk.css",
+    "static/js/main.47272d06.chunk.js"
   ]
 }
