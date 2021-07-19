@@ -22,7 +22,7 @@ const NavbarMobile = () => {
             <Link to="/restauracja">DrinkBar</Link>
           </li>
           <li>
-            <Link to="">Cennik</Link>
+            <Link to="/cennik">Cennik</Link>
           </li>
           <li>
             <Link to="">Oferta Specjalna</Link>
