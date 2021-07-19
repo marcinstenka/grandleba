@@ -415,12 +415,22 @@ footer {
 .tables {
   display: none;
 }
+.mobile-table {
+  border-top: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+}
 .mobile-table-item {
   padding: 10px 0 20px 0;
   color: var(--brown);
 }
 .mobile-table-item:nth-of-type(odd) {
   background: #eee;
+}
+.mobile-table-header {
+  text-align: center;
+  font-size: 25px;
+  color: var(--brown);
+  margin: 15px 0;
 }
 .mobile-table-item h4 {
   text-align: center;
@@ -432,6 +442,10 @@ footer {
   font-weight: normal;
   font-size: 16px;
   margin: 2px 0;
+  display: flex;
+  padding: 5px 10px 0 10px;
+  justify-self: center;
+  align-self: center;
 }
 .table-item-grid {
   display: grid;
