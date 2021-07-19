@@ -165,12 +165,12 @@ img {
 
 .mobile-logo,
 .mobile-logo h3 {
-  max-width: 260px;
+  max-width: 250px;
   margin: 0 auto;
 }
 
 .mobile-logo h3 {
-  font-size: 11px;
+  font-size: 0.75rem;
   font-weight: normal;
   color: var(--brown);
   text-align: center;
