@@ -3,6 +3,7 @@ import MobileLogo from '../Components/MobileLogo/MobileLogo';
 
 import RestaurantImage from '../assets/restaurant-image.jpg';
 import useMobile from '../CustomHooks/useMobile';
+import Footer from '../Components/Footer/Footer';
 
 const Restaurant = () => {
   const isMobile = useMobile();
@@ -30,6 +31,7 @@ const Restaurant = () => {
           taras z widokiem na kanał Chełst.
         </p>
       </div>
+      <Footer />
     </>
   );
 };
