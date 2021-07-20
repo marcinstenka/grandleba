@@ -1,9 +1,9 @@
 import Navbar from '../Components/Navbar/Navbar';
-import MobileLogo from '../Components/MobileLogo/MobileLogo';
-
-import RestaurantImage from '../assets/restaurant-image.jpg';
-import useMobile from '../CustomHooks/useMobile';
 import Footer from '../Components/Footer/Footer';
+import MobileLogo from '../Components/MobileLogo/MobileLogo';
+import RestaurantImage from '../assets/hotel-image5.jpg';
+
+import useMobile from '../CustomHooks/useMobile';
 
 const Restaurant = () => {
   const isMobile = useMobile();

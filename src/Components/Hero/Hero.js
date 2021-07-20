@@ -6,6 +6,13 @@ import { faComment as fasComment } from '@fortawesome/free-solid-svg-icons';
 import { faUsers as fasUsers } from '@fortawesome/free-solid-svg-icons';
 
 import MobileLogo from '../MobileLogo/MobileLogo';
+import HotelImage1 from '../../assets/hotel-image1.jpg';
+import HotelImage2 from '../../assets/hotel-image2.jpg';
+import HotelImage3 from '../../assets/hotel-image3.jpg';
+import HotelImage4 from '../../assets/hotel-image4.jpg';
+import HotelImage5 from '../../assets/hotel-image5.jpg';
+import HotelImage6 from '../../assets/hotel-image6.jpg';
+import HotelImage7 from '../../assets/hotel-image7.jpg';
 import HeroImage1 from '../../assets/hero-image1.jpg';
 import HeroImage2 from '../../assets/hero-image2.jpg';
 import HeroImage3 from '../../assets/hero-image3.jpg';
@@ -23,13 +30,26 @@ const Hero = ({ isMobile }) => {
           autoplay={{ delay: 2000 }}
         >
           <SwiperSlide>
-            <img src={HeroImage1} alt="" />
+            <img src={HotelImage1} alt="Hotel Grand Łeba" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={HeroImage3} alt="" />
+            <img src={HotelImage2} alt="Hotel Grand Łeba" />
           </SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>
+            <img src={HotelImage3} alt="Taras restauracji Grand Łeba" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={HotelImage4} alt="Bar restauracji Grand Łeba" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={HotelImage5} alt="Restauracja Grand Łeba" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={HotelImage6} alt="Taras restauracji Grand Łeba" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={HotelImage7} alt="Recepcja Grand Łeba" />
+          </SwiperSlide>
         </Swiper>
       </div>
       <div className="hero-welcome">

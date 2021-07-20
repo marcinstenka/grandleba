@@ -2,7 +2,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Navbar from '../Components/Navbar/Navbar';
 import MobileLogo from '../Components/MobileLogo/MobileLogo';
 import Footer from '../Components/Footer/Footer';
-import HeroImage1 from '../assets/hero-image1.jpg';
+import RoomsImage1 from '../assets/rooms-image1.jpg';
+import RoomsImage2 from '../assets/rooms-image2.jpg';
+import RoomsImage3 from '../assets/rooms-image3.jpg';
+import RoomsImage4 from '../assets/rooms-image4.jpg';
+import RoomsImage5 from '../assets/rooms-image5.jpg';
+import RoomsImage6 from '../assets/rooms-image6.jpg';
+import RoomsImage7 from '../assets/rooms-image7.jpg';
+import RoomsImage8 from '../assets/rooms-image8.jpg';
+import RoomsImage9 from '../assets/rooms-image9.jpg';
 
 import useMobile from '../CustomHooks/useMobile';
 
@@ -23,10 +31,31 @@ const Rooms = () => {
             autoplay={{ delay: 2000 }}
           >
             <SwiperSlide>
-              <img src={HeroImage1} alt="" />
+              <img className="rooms-image1" src={RoomsImage1} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={HeroImage1} alt="" />
+              <img src={RoomsImage2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img className="rooms-image3" src={RoomsImage3} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={RoomsImage4} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img className="rooms-image5" src={RoomsImage5} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={RoomsImage6} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={RoomsImage7} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={RoomsImage8} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img className="rooms-image9" src={RoomsImage9} alt="" />
             </SwiperSlide>
           </Swiper>
         </div>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt as fasPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope as farEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -12,19 +14,19 @@ const Footer = () => {
         <div className="footer-number">
           <div className="icon-wrapper">
             <FontAwesomeIcon icon={fasPhoneAlt} />
-            <a href="tel:+48 723 724 722">+48 723 724 722</a>
+            <a to="tel:+48 723 724 722">+48 723 724 722</a>
           </div>
         </div>
         <div className="footer-mail">
           <div className="icon-wrapper">
             <FontAwesomeIcon icon={farEnvelope} />
-            <a href="mail:recepcja@grandleba.pl">recepcja@grandleba.pl</a>
+            <a to="mail:recepcja@grandleba.pl">recepcja@grandleba.pl</a>
           </div>
         </div>
         <div className="footer-mail">
           <div className="icon-wrapper">
             <FontAwesomeIcon icon={farEnvelope} />
-            <a href="mail:biuro@grandleba.pl">biuro@grandleba.pl</a>
+            <a to="mail:biuro@grandleba.pl">biuro@grandleba.pl</a>
           </div>
         </div>
       </div>
@@ -33,22 +35,22 @@ const Footer = () => {
         <div className="footer-links">
           <ul>
             <li>
-              <a href="">HOTEL</a>
+              <Link to="/">HOTEL</Link>
             </li>
             <li>
-              <a href="">NOWA INWESTYCJA</a>
+              <Link to="/nowa-inwestycja">NOWA INWESTYCJA</Link>
             </li>
             <li>
-              <a href="">APARTAMENTY</a>
+              <Link to="">APARTAMENTY</Link>
             </li>
             <li>
-              <a href="">OFERTA DLA GRUP</a>
+              <Link to="">OFERTA DLA GRUP</Link>
             </li>
             <li>
-              <a href="">POLITYKA PRYWATNOŚCI</a>
+              <Link to="">POLITYKA PRYWATNOŚCI</Link>
             </li>
             <li>
-              <a href="">KONTAKT</a>
+              <Link to="">KONTAKT</Link>
             </li>
           </ul>
         </div>

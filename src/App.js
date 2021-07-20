@@ -6,6 +6,7 @@ import Restaurant from './Pages/Restaurant';
 import PriceList from './Pages/PriceList';
 import ForGroups from './Pages/ForGroups';
 import SafeStay from './Pages/SafeStay';
+import NewInvestment from './Pages/NewInvestment';
 
 // swiper.js initialization
 import 'swiper/swiper-bundle.css';
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/cennik" component={PriceList} />
         <Route exact path="/dla-grup" component={ForGroups} />
         <Route exact path="/bezpieczny-pobyt" component={SafeStay} />
+        <Route exact path="/nowa-inwestycja" component={NewInvestment} />
         {/* <Route exact path="/o-mnie" component={About} />
         <Route exact path="/oferta" component={Offer} />
         <Route exact path="/kontakt" component={Contact} /> */}
