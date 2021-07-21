@@ -399,9 +399,10 @@ footer {
   padding: 0 15px 50px 15px;
 }
 
-/* 2.5 Rooms */
+/* 2.5 Rooms & Apartments */
 
-.rooms-info {
+.rooms-info,
+.apartments-info {
   max-width: 90%;
   margin: 0 auto;
   padding: 10px 0 20px 0;
@@ -411,7 +412,8 @@ footer {
   border-bottom: 0.5px solid #dedede;
 }
 
-.text-rooms {
+.text-rooms,
+.text-apartments {
   padding-top: 20px;
 }
 
@@ -556,6 +558,7 @@ footer {
 }
 
 /* 2.9 New Investment*/
+
 .new-investment-header {
   font-size: 30px;
 }
@@ -565,4 +568,28 @@ footer {
 }
 .new-investment-slider img {
   top: unset !important;
+}
+
+/* 2.10 Parking */
+.container-parking h4 {
+  font-size: calc(var(--mainFontSize) + 2px);
+  text-align: center;
+  max-width: 290px;
+  margin: 0 auto;
+  color: var(--blue);
+}
+.text-parking {
+  line-height: 1.5;
+}
+
+/* 2.11 Contact */
+
+.contact-map {
+  max-width: 650px;
+  margin: 0 auto 10px auto;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
 }

@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="footer-mail">
           <div className="icon-wrapper">
             <FontAwesomeIcon icon={farEnvelope} />
-            <a to="mail:recepcja@grandleba.pl">recepcja@grandleba.pl</a>
+            <a to="mailto:recepcja@grandleba.pl">recepcja@grandleba.pl</a>
           </div>
         </div>
         <div className="footer-mail">
@@ -40,17 +40,18 @@ const Footer = () => {
             <li>
               <Link to="/nowa-inwestycja">NOWA INWESTYCJA</Link>
             </li>
+
             <li>
-              <Link to="">APARTAMENTY</Link>
+              <Link to="/parking">PARKING</Link>
             </li>
             <li>
-              <Link to="">OFERTA DLA GRUP</Link>
+              <Link to="/dla-grup">OFERTA DLA GRUP</Link>
             </li>
             <li>
-              <Link to="">POLITYKA PRYWATNOŚCI</Link>
+              <Link to="/polityka-prywatnosci">POLITYKA PRYWATNOŚCI</Link>
             </li>
             <li>
-              <Link to="">KONTAKT</Link>
+              <Link to="/kontakt">KONTAKT</Link>
             </li>
           </ul>
         </div>

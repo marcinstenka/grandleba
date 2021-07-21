@@ -19,6 +19,9 @@ const NavbarMobile = () => {
             <Link to="/pokoje">Pokoje</Link>
           </li>
           <li>
+            <Link to="/apartamenty">Apartamenty</Link>
+          </li>
+          <li>
             <Link to="/restauracja">DrinkBar</Link>
           </li>
           <li>

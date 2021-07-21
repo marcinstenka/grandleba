@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
 
 import Hotel from './Pages/Hotel';
 import Rooms from './Pages/Rooms';
@@ -7,6 +7,10 @@ import PriceList from './Pages/PriceList';
 import ForGroups from './Pages/ForGroups';
 import SafeStay from './Pages/SafeStay';
 import NewInvestment from './Pages/NewInvestment';
+import Apartments from './Pages/Apartments';
+import Parking from './Pages/Parking';
+import Privacy from './Pages/Privacy';
+import Contact from './Pages/Contact';
 
 // swiper.js initialization
 import 'swiper/swiper-bundle.css';
@@ -24,9 +28,10 @@ function App() {
         <Route exact path="/dla-grup" component={ForGroups} />
         <Route exact path="/bezpieczny-pobyt" component={SafeStay} />
         <Route exact path="/nowa-inwestycja" component={NewInvestment} />
-        {/* <Route exact path="/o-mnie" component={About} />
-        <Route exact path="/oferta" component={Offer} />
-        <Route exact path="/kontakt" component={Contact} /> */}
+        <Route exact path="/apartamenty" component={Apartments} />
+        <Route exact path="/parking" component={Parking} />
+        <Route exact path="/polityka-prywatnosci" component={Privacy} />
+        <Route exact path="/kontakt" component={Contact} />
       </Switch>
     </BrowserRouter>
   );
