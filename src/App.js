@@ -19,7 +19,7 @@ SwiperCore.use([Navigation, Autoplay]);
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/grandleba/">
       <Switch>
         <Route exact path="/" component={Hotel} />
         <Route exact path="/pokoje" component={Rooms} />
