@@ -1,6 +1,6 @@
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-import MobileLogo from '../Components/MobileLogo/MobileLogo';
+import Logo from '../Components/Logo/Logo';
 import InvestmentImage1 from '../assets/investment-image1.jpg';
 import InvestmentImage2 from '../assets/investment-image2.jpg';
 import InvestmentImage3 from '../assets/investment-image3.jpg';
@@ -16,7 +16,7 @@ const NewInvestment = () => {
     <>
       <Navbar isMobile={isMobile} />
       <div className="container">
-        {isMobile && <MobileLogo />}
+        {isMobile && <Logo />}
         <h1 className="header new-investment-header">
           GRAND ŁEBA – NOWA INWESTYCJA
         </h1>

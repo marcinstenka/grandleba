@@ -1,6 +1,6 @@
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-import MobileLogo from '../Components/MobileLogo/MobileLogo';
+import Logo from '../Components/Logo/Logo';
 
 import useMobile from '../CustomHooks/useMobile';
 
@@ -10,7 +10,7 @@ const Parking = () => {
     <>
       <Navbar isMobile={isMobile} />
       <div className="container container-praking">
-        {isMobile && <MobileLogo />}
+        {isMobile && <Logo />}
         <h1 className="header">Parking</h1>
         <h4>PARKING MONITOROWANY - GRAND ŁEBA</h4>
         <p className="text">

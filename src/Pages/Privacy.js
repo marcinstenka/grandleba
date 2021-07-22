@@ -1,6 +1,6 @@
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-import MobileLogo from '../Components/MobileLogo/MobileLogo';
+import Logo from '../Components/Logo/Logo';
 
 import useMobile from '../CustomHooks/useMobile';
 
@@ -10,7 +10,7 @@ const Privacy = () => {
     <>
       <Navbar isMobile={isMobile} />
       <div className="container container-parking">
-        {isMobile && <MobileLogo />}
+        {isMobile && <Logo />}
         <h1 className="header">POLITYKA PRYWATNOŚCI</h1>
         <p className="text text-parking">
           Informacja o danych osobowy dla gości Grand Łeba w Łebie

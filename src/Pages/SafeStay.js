@@ -1,5 +1,5 @@
 import Navbar from '../Components/Navbar/Navbar';
-import MobileLogo from '../Components/MobileLogo/MobileLogo';
+import Logo from '../Components/Logo/Logo';
 import Footer from '../Components/Footer/Footer';
 import useMobile from '../CustomHooks/useMobile';
 
@@ -9,7 +9,7 @@ const SafeStay = () => {
     <>
       <Navbar isMobile={isMobile} />
       <div className="container">
-        {isMobile && <MobileLogo />}
+        {isMobile && <Logo />}
         <h1 className="header">Bezpieczny pobyt</h1>
         <p className="text ">
           Zapewnienie bezpieczeństwa naszym Gościom jest dla nas kwestią

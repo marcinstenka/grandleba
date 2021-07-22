@@ -1,6 +1,6 @@
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-import MobileLogo from '../Components/MobileLogo/MobileLogo';
+import Logo from '../Components/Logo/Logo';
 
 import useMobile from '../CustomHooks/useMobile';
 
@@ -10,7 +10,7 @@ const Contact = () => {
     <>
       <Navbar isMobile={isMobile} />
       <div className="container container-contact">
-        {isMobile && <MobileLogo />}
+        {isMobile && <Logo />}
         <h1 className="header">Kontakt</h1>
         <div className="contact-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9208.514544802283!2d17.556427!3d54.760125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fe7832684a4abd%3A0x56aca0137cb8b538!2sNad+Uj%C5%9Bciem+6%2C+84-360+%C5%81eba!5e0!3m2!1spl!2spl!4v1515326966026"></iframe>

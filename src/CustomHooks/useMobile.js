@@ -18,9 +18,9 @@ const useMobile = () => {
   useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
       setWidth(window.innerWidth);
-    }, 100);
+    }, 50);
     window.addEventListener('resize', debouncedHandleResize);
-    if (width > 1000) {
+    if (width >= 1000) {
       setIsMobile(false);
     } else {
       setIsMobile(true);

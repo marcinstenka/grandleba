@@ -1,6 +1,6 @@
 import Footer from '../Components/Footer/Footer';
 import Navbar from '../Components/Navbar/Navbar';
-import MobileLogo from '../Components/MobileLogo/MobileLogo';
+import Logo from '../Components/Logo/Logo';
 import useMobile from '../CustomHooks/useMobile';
 
 const ForGroups = () => {
@@ -9,7 +9,7 @@ const ForGroups = () => {
     <>
       <Navbar isMobile={isMobile} />
       <div className="container">
-        {isMobile && <MobileLogo />}
+        {isMobile && <Logo />}
         <h1 className="header for-groups-header">
           OFERTA DLA GRUP ZORGANIZOWANYCH
         </h1>

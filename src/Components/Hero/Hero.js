@@ -5,7 +5,7 @@ import { faUtensils as fasUtensils } from '@fortawesome/free-solid-svg-icons';
 import { faComment as fasComment } from '@fortawesome/free-solid-svg-icons';
 import { faUsers as fasUsers } from '@fortawesome/free-solid-svg-icons';
 
-import MobileLogo from '../MobileLogo/MobileLogo';
+import Logo from '../Logo/Logo';
 import HotelImage1 from '../../assets/hotel-image1.jpg';
 import HotelImage2 from '../../assets/hotel-image2.jpg';
 import HotelImage3 from '../../assets/hotel-image3.jpg';
@@ -20,7 +20,7 @@ import HeroImage3 from '../../assets/hero-image3.jpg';
 const Hero = ({ isMobile }) => {
   return (
     <div className="container">
-      {isMobile && <MobileLogo />}
+      {isMobile && <Logo />}
       <div className="hero-slider">
         <Swiper
           spaceBetween={20}

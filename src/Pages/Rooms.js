@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Navbar from '../Components/Navbar/Navbar';
-import MobileLogo from '../Components/MobileLogo/MobileLogo';
+import Logo from '../Components/Logo/Logo';
 import Footer from '../Components/Footer/Footer';
 import RoomsImage1 from '../assets/rooms-image1.jpg';
 import RoomsImage2 from '../assets/rooms-image2.jpg';
@@ -20,7 +20,7 @@ const Rooms = () => {
     <>
       <Navbar isMobile={isMobile} />
       <div className="container">
-        {isMobile && <MobileLogo />}
+        {isMobile && <Logo />}
         <h1 className="header">Pokoje</h1>
         <div className="rooms-slider">
           <Swiper
