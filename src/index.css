@@ -21,6 +21,7 @@ body {
 }
 #root {
   overflow: hidden;
+  position: relative;
 }
 ul,
 li,
@@ -190,46 +191,34 @@ img {
 }
 
 @media (min-width: 1050px) {
-  .swiper-slide {
+  .hero-slider .swiper-slide {
     height: 700px !important;
     position: relative;
   }
 }
 @media (min-width: 1180px) {
-  .swiper-slide img {
+  .hero-slider .swiper-slide img {
     position: absolute;
     top: -10%;
   }
 }
 @media (min-width: 1420px) {
-  .swiper-slide img {
+  .hero-slider .swiper-slide img {
     top: -20%;
   }
 }
 @media (min-width: 1600px) {
-  .swiper-slide img {
+  .hero-slider .swiper-slide img {
     top: -30%;
   }
 }
 @media (min-width: 1800px) {
-  .swiper-slide img {
+  .hero-slider .swiper-slide img {
     top: -40%;
-  }
-  .swiper-slide img.rooms-image1 {
-    top: -43%;
-  }
-  .swiper-slide img.rooms-image3 {
-    top: -5%;
-  }
-  .swiper-slide img.rooms-image5 {
-    top: -53%;
-  }
-  .swiper-slide img.rooms-image5 {
-    top: -41%;
   }
 }
 @media (min-width: 1800px) {
-  .swiper-slide img {
+  .hero-slider .swiper-slide img {
     position: absolute;
     top: -50%;
   }
@@ -249,6 +238,7 @@ img {
   font-weight: 100;
   text-transform: uppercase;
   line-height: 1.2;
+  max-width: 268px;
 }
 .hero-welcome h3 {
   font-size: 20px;
@@ -416,7 +406,10 @@ footer {
 .text-apartments {
   padding-top: 20px;
 }
-
+.rooms-slider .swiper-container {
+  max-width: 900px;
+  height: 100%;
+}
 /* 2.6 Price List */
 @media (min-width: 700px) {
   .mobile-tables {
@@ -585,7 +578,7 @@ footer {
 /* 2.11 Contact */
 
 .contact-map {
-  max-width: 650px;
+  max-width: 900px;
   margin: 0 auto 10px auto;
 }
 .contact-map iframe {
@@ -596,9 +589,21 @@ footer {
 
 /* 3. Desktop */
 @media (min-width: 1000px) {
-  /* 3.1 Nav */
+  /* Global 3.1 */
+
+  .header {
+    font-size: 55px;
+    padding: 50px 0 15px 0;
+  }
+  .text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
+    font-size: calc(var(--mainFontSize) + 2px);
+  }
+  /* 3.2 Nav */
   nav {
-    background: #eee;
+    background: var(--bg);
     border-bottom: 3px solid var(--blue);
     position: fixed;
     top: 0;
@@ -647,6 +652,167 @@ footer {
   }
   .active-nav-link .container {
     margin: 98px 0 0 0;
+  }
+
+  /* 3.3 Hero */
+
+  .hero-welcome h1 {
+    max-width: unset;
+    font-size: 48px;
+    margin: 40px auto 0 auto;
+  }
+  .hero-welcome br {
+    display: none;
+  }
+  .hero-images {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+  }
+  .hero-image {
+    width: 350px;
+    margin: 0 10px;
+    border-bottom: 2px solid var(--brown);
+    padding: 0 0 20px 0;
+  }
+  .image-wrapper {
+    max-width: unset;
+    margin: 0;
+    padding: 0;
+    border-top: unset;
+  }
+  .hero-info {
+    margin: 70px 0 0 0;
+  }
+  .hero-info h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+  .info-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .info-item svg {
+    font-size: 65px;
+  }
+
+  /* 3.4 Footer */
+  /* if page's height is less than 100vh so footer could be at the bottom */
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  footer {
+    margin: auto 0 0 0;
+  }
+
+  .footer-section span br {
+    display: none;
+  }
+  .footer-mail a,
+  .footer-number a {
+    font-size: 20px;
+  }
+  .footer-section:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 30px 0;
+  }
+  .footer-privacy {
+    font-size: 18px;
+    padding: 0;
+  }
+  .footer-links {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .footer-links a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: var(--white);
+    transition: all 0.2s;
+  }
+  .footer-links a:hover::after {
+    width: 100%;
+  }
+
+  /* 3.5 Rooms & Apartments */
+
+  .rooms-info,
+  .apartments-info {
+    max-width: 900px;
+    text-align: center;
+    padding: 15px 0 25px 0;
+    font-size: calc(var(--mainFontSize) + 1px);
+  }
+
+  /* 3.6 Restaurant */
+
+  .restaurant-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .text-restaurant {
+    padding: 0 0 0 25px;
+  }
+
+  /* 3.7 Price List */
+  .price-list-list {
+    margin: 30px auto 0 auto;
+    max-width: 900px;
+  }
+  .price-list-list li {
+    font-size: var(--mainFontSize);
+  }
+  .price-list-text h1 {
+    font-size: 20px;
+  }
+
+  /* 3.8 Safe Stay */
+  .safe-stay-text {
+    font-size: calc(var(--mainFontSize) + 3px);
+  }
+  .safe-stay-list {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .safe-stay-list li {
+    font-size: var(--mainFontSize);
+  }
+
+  /* 3.9 New Investment */
+  .new-investment-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .new-investment-wrapper:last-of-type {
+    margin: 45px auto 0 auto;
+    flex-direction: row-reverse;
+  }
+  .new-investment-wrapper:last-of-type .text-new-investment {
+    padding: 0 25px 0 0;
+  }
+  .text-new-investment {
+    padding: 0 0 0 25px;
+  }
+  .new-investment-slider {
+    width: 450px;
+  }
+
+  /* 3.10 Parking */
+  .container-parking h4 {
+    max-width: unset;
+    font-size: 22px;
   }
 }
 @media (min-width: 1200px) {

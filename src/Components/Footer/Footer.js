@@ -14,19 +14,19 @@ const Footer = () => {
         <div className="footer-number">
           <div className="icon-wrapper">
             <FontAwesomeIcon icon={fasPhoneAlt} />
-            <a to="tel:+48 723 724 722">+48 723 724 722</a>
+            <a href="tel:+48 723 724 722">+48 723 724 722</a>
           </div>
         </div>
         <div className="footer-mail">
           <div className="icon-wrapper">
             <FontAwesomeIcon icon={farEnvelope} />
-            <a to="mailto:recepcja@grandleba.pl">recepcja@grandleba.pl</a>
+            <a href="mailto:recepcja@grandleba.pl">recepcja@grandleba.pl</a>
           </div>
         </div>
         <div className="footer-mail">
           <div className="icon-wrapper">
             <FontAwesomeIcon icon={farEnvelope} />
-            <a to="mail:biuro@grandleba.pl">biuro@grandleba.pl</a>
+            <a href="mail:biuro@grandleba.pl">biuro@grandleba.pl</a>
           </div>
         </div>
       </div>

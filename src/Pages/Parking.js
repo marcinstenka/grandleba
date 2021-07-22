@@ -9,7 +9,7 @@ const Parking = () => {
   return (
     <>
       <Navbar isMobile={isMobile} />
-      <div className="container container-praking">
+      <div className="container container-parking">
         {isMobile && <Logo />}
         <h1 className="header">Parking</h1>
         <h4>PARKING MONITOROWANY - GRAND ŁEBA</h4>

@@ -1,5 +1,6 @@
-import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
-
+import { useEffect } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import useMobile from './CustomHooks/useMobile';
 import Hotel from './Pages/Hotel';
 import Rooms from './Pages/Rooms';
 import Restaurant from './Pages/Restaurant';
@@ -15,9 +16,21 @@ import Contact from './Pages/Contact';
 // swiper.js initialization
 import 'swiper/swiper-bundle.css';
 import SwiperCore, { Navigation, Autoplay } from 'swiper';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 SwiperCore.use([Navigation, Autoplay]);
 
 function App() {
+  const isMobile = useMobile();
+  useEffect(() => {
+    if (isMobile) {
+      Aos.init();
+    } else {
+      Aos.init({ offset: 250 });
+    }
+  }, []);
   return (
     <BrowserRouter basename="/grandleba/">
       <Switch>
