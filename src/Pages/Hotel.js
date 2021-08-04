@@ -8,13 +8,13 @@ import useMobile from '../CustomHooks/useMobile';
 
 const Hotel = () => {
 	const isMobile = useMobile();
-	const [cookies, setCookie] = useCookies(['cookies']);
+	const [cookies, setCookie] = useCookies(['CookiesGrandLeba']);
 	const handleCookie = () => {
-		setCookie('Cookies', 'CookiesAccepted', { path: '/' });
+		setCookie('CookiesGrandLeba', 'CookiesAccepted', { path: '/' });
 	};
 
 	useEffect(() => {
-		if (!cookies.Cookies) {
+		if (!cookies.CookiesGrandLeba) {
 			const cookiesBtn = document.querySelector('.cookies button');
 			cookiesBtn.addEventListener('click', () => {
 				cookiesBtn.parentElement.style.display = 'none';
@@ -24,7 +24,7 @@ const Hotel = () => {
 	return (
 		<>
 			<Navbar isMobile={isMobile} />
-			{!cookies.Cookies && (
+			{!cookies.CookiesGrandLeba && (
 				<div className='cookies'>
 					<p>Ta strona wykorzystuje pliki cookies.</p>{' '}
 					<button onClick={handleCookie}>X</button>
