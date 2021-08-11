@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt as fasPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope as farEnvelope } from '@fortawesome/free-regular-svg-icons';
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer>
       <div className="footer-section">
         <span>
-          Zadzwoń do nas lub <br />
-          napisz wiadomość:
+          {t('footer1')} <br />
+          {t('footer2')}
         </span>
         <div className="footer-number">
           <div className="icon-wrapper">
@@ -38,27 +39,24 @@ const Footer = () => {
               <Link to="/">HOTEL</Link>
             </li>
             <li>
-              <Link to="/nowa-inwestycja">NOWA INWESTYCJA</Link>
+              <Link to="/nowa-inwestycja">{t('footer3')}</Link>
             </li>
 
             <li>
-              <Link to="/parking">PARKING</Link>
+              <Link to="/parking">{t('footer4')}</Link>
             </li>
             <li>
-              <Link to="/dla-grup">OFERTA DLA GRUP</Link>
+              <Link to="/dla-grup">{t('footer5')}</Link>
             </li>
             <li>
-              <Link to="/polityka-prywatnosci">POLITYKA PRYWATNOŚCI</Link>
+              <Link to="/polityka-prywatnosci">{t('footer6')}</Link>
             </li>
             <li>
-              <Link to="/kontakt">KONTAKT</Link>
+              <Link to="/bezpieczny-pobyt">{t('footer7')}</Link>
             </li>
           </ul>
         </div>
-        <div className="footer-privacy">
-          GRAND ŁEBA – komfortowe noclegi w centum Łeby © 2021 Wszelkie prawa
-          zastrzeżone
-        </div>
+        <div className="footer-privacy">{t('footer8')}</div>
       </div>
     </footer>
   );

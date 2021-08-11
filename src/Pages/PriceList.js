@@ -1,219 +1,215 @@
+import useMobile from '../CustomHooks/useMobile';
+import { useTranslation } from 'react-i18next';
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import Logo from '../Components/Logo/Logo';
 
-import useMobile from '../CustomHooks/useMobile';
-
 const PriceList = () => {
   const isMobile = useMobile();
-
+  const { t } = useTranslation();
   return (
     <>
       <Navbar isMobile={isMobile} />
       <div className="container price-list-container">
         {isMobile && <Logo />}
-        <h1 className="header">Cennik</h1>
+        <h1 className="header">{t('priceList-header')}</h1>
         <div className="mobile-tables">
           <div className="mobile-table">
             <div className="mobile-table-item">
-              <h4>pokój 1 osobowy</h4>
+              <h4>{t('priceList-type1')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>130 zł/doba </h5>
-                <h5>Sezon średni</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price1')}</h5>
+                <h5>{t('priceList-season2')}</h5>
                 <h5>-</h5>
-                <h5>Sezon średni +</h5>
+                <h5>{t('priceList-season3')}</h5>
                 <h5>-</h5>
-                <h5>Sezon wysoki</h5>
+                <h5>{t('priceList-season4')}</h5>
                 <h5>-</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>pokój 2 osobowy z balkonem z widokiem na kanał Chełst</h4>
+              <h4>{t('priceList-type2')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>230 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>320 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>390 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>450 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price2')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price3')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price4')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price5')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>pokój 2 osobowy z widokiem na kanał</h4>
+              <h4>{t('priceList-type3')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>210 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>270 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>350 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>400 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price6')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price7')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price8')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price9')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>pokój 2 osobowy </h4>
+              <h4>{t('priceList-type4')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>200 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>260 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>330 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>390 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price10')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price11')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price12')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price13')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>pokój 2 osobowy z tarasem z widokiem na kanał*</h4>
+              <h4>{t('priceList-type5')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>180 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>250 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>290 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>340 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price14')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price15')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price16')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price17')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>pokój 2 osobowy *</h4>
+              <h4>{t('priceList-type6')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>160 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>220 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>280 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>330 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price18')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price19')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price20')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price21')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>apartament 4 osobowy</h4>
+              <h4>{t('priceList-type7')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>400 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>570 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>570 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>690 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price22')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price23')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price24')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price25')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>apartament 4 osobowy z balkonem z widokiem na kanał</h4>
+              <h4>{t('priceList-type8')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>400 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>570 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>570 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>690 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price26')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price27')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price28')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price29')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>
-                apartament z dużym tarasem 3 osobowy z widokiem na kanał Chełst*
-              </h4>
+              <h4>{t('priceList-type9')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>380 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>490 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>490 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>610 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price30')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price31')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price32')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price33')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>
-                apartament z dużym tarasem 2 osobowy z widokiem na kanał Chełst*
-              </h4>
+              <h4>{t('priceList-type10')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>340 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>450 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>450 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>570 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price34')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price35')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price36')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price37')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>apartament bez tarasu*</h4>
+              <h4>{t('priceList-type11')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>350 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>460 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>460 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>550 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price38')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price39')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price40')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price41')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>apartament bez tarasu*</h4>
+              <h4>{t('priceList-type12')}</h4>
               <div className="table-item-grid">
-                <h5>Sezon niski</h5>
-                <h5>310 zł/doba </h5>
-                <h5>Sezon średni</h5>
-                <h5>420 zł/doba</h5>
-                <h5>Sezon średni +</h5>
-                <h5>420 zł/doba</h5>
-                <h5>Sezon wysoki</h5>
-                <h5>510 zł/doba</h5>
+                <h5>{t('priceList-season1')}</h5>
+                <h5>{t('priceList-price42')}</h5>
+                <h5>{t('priceList-season2')}</h5>
+                <h5>{t('priceList-price43')}</h5>
+                <h5>{t('priceList-season3')}</h5>
+                <h5>{t('priceList-price44')}</h5>
+                <h5>{t('priceList-season4')}</h5>
+                <h5>{t('priceList-price45')}</h5>
               </div>
             </div>
           </div>
-          <p>* pokój o mniejszym metrażu, skosy</p>
-          <h3 className="header">Sezony</h3>
+          <p>{t('priceList1')}</p>
+          <h3 className="header">{t('priceList2')}</h3>
           <div className="mobile-table">
             <div className="mobile-table-item">
-              <h4>Sezon niski</h4>
+              <h4>{t('priceList-season1')}</h4>
               <div className="table-item-grid">
-                <h5>obowiązuje w terminie:</h5>
-                <h5>19.09-30.04 (z wyłączeniem pakietów)</h5>
-                <h5>obowiązuje w terminie:</h5>
+                <h5>{t('priceList3')}</h5>
+                <h5>19.09-30.04 {t('priceList4')}</h5>
+                <h5>{t('priceList3')}</h5>
                 <h5>3.05-28.05</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>Sezon średni</h4>
+              <h4>{t('priceList-season2')}</h4>
               <div className="table-item-grid">
-                <h5>obowiązuje w terminie:</h5>
+                <h5>{t('priceList3')}</h5>
                 <h5>28.05-2.06</h5>
-                <h5>obowiązuje w terminie:</h5>
+                <h5>{t('priceList3')}</h5>
                 <h5>6.06-25.06</h5>
-                <h5>obowiązuje w terminie:</h5>
+                <h5>{t('priceList3')}</h5>
                 <h5>22.08-19.09</h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>Sezon średni +</h4>
+              <h4>{t('priceList-season3')}</h4>
               <div className="table-item-grid">
-                <h5>obowiązuje w terminie:</h5>
+                <h5>{t('priceList3')}</h5>
                 <h5>30.04-3.05</h5>
-                <h5>obowiązuje w terminie:</h5>
+                <h5>{t('priceList3')}</h5>
                 <h5>2.06-6.06 </h5>
-                <h5>obowiązuje w terminie:</h5>
+                <h5>{t('priceList3')}</h5>
                 <h5>25.06-10.07 </h5>
               </div>
             </div>
             <div className="mobile-table-item">
-              <h4>Sezon wysoki</h4>
+              <h4>{t('priceList-season4')}</h4>
               <div className="table-item-grid">
-                <h5>obowiązuje w terminie:</h5>
+                <h5>{t('priceList3')}</h5>
                 <h5>10.07-22.08</h5>
               </div>
             </div>
@@ -222,126 +218,122 @@ const PriceList = () => {
         <div className="tables">
           <table>
             <tr>
-              <td>CENNIK GRAND ŁEBA 2021</td>
-              <td>SEZON NISKI</td>
-              <td>SEZON ŚREDNI</td>
-              <td>SEZON ŚREDNI +</td>
-              <td>SEZON WYSOKI</td>
+              <td>{t('priceList-header')} GRAND ŁEBA 2021</td>
+              <td>{t('priceList-season1')}</td>
+              <td>{t('priceList-season2')}</td>
+              <td>{t('priceList-season3')}</td>
+              <td>{t('priceList-season4')}</td>
             </tr>
             <tr>
-              <td>pokój 1 osobowy</td>
-              <td>130 zł/dobę</td>
+              <td>{t('priceList-type1')}</td>
+              <td>{t('priceList-price1')}</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
             </tr>
             <tr>
-              <td>pokój 2 osobowy z balkonem z widokiem na kanał Chełst</td>
-              <td>230 zł/dobę</td>
-              <td>320 zł/dobę</td>
-              <td>390 zł/dobę</td>
-              <td>450 zł/dobę</td>
+              <td>{t('priceList-type2')}</td>
+              <td>{t('priceList-price2')}</td>
+              <td>{t('priceList-price3')}</td>
+              <td>{t('priceList-price4')}</td>
+              <td>{t('priceList-price5')}</td>
             </tr>
             <tr>
-              <td>pokój 2 osobowy / widokiem na kanał</td>
-              <td>230 zł/dobę</td>
-              <td>270 zł/dobę</td>
-              <td>350 zł/dobę</td>
-              <td>400 zł/dobę</td>
+              <td>{t('priceList-type3')}</td>
+              <td>{t('priceList-price6')}</td>
+              <td>{t('priceList-price7')}</td>
+              <td>{t('priceList-price8')}</td>
+              <td>{t('priceList-price9')}</td>
             </tr>
             <tr>
-              <td>pokój 2 osobowy</td>
-              <td>200 zł/dobę</td>
-              <td>260 zł/dobę</td>
-              <td>330 zł/dobę</td>
-              <td>390 zł/dobę</td>
+              <td>{t('priceList-type4')}</td>
+              <td>{t('priceList-price10')}</td>
+              <td>{t('priceList-price11')}</td>
+              <td>{t('priceList-price12')}</td>
+              <td>{t('priceList-price13')}</td>
             </tr>
             <tr>
-              <td>pokój 2 osobowy z tarasem z widokiem na kanał*</td>
-              <td>180 zł/dobę</td>
-              <td>250 zł/dobę</td>
-              <td>290 zł/dobę</td>
-              <td>340 zł/dobę</td>
+              <td>{t('priceList-type5')}</td>
+              <td>{t('priceList-price14')}</td>
+              <td>{t('priceList-price15')}</td>
+              <td>{t('priceList-price16')}</td>
+              <td>{t('priceList-price17')}</td>
             </tr>
             <tr>
-              <td>pokój 2 osobowy*</td>
-              <td>160 zł/dobę</td>
-              <td>220 zł/dobę</td>
-              <td>280 zł/dobę</td>
-              <td>330 zł/dobę</td>
+              <td>{t('priceList-type6')}</td>
+              <td>{t('priceList-price18')}</td>
+              <td>{t('priceList-price19')}</td>
+              <td>{t('priceList-price20')}</td>
+              <td>{t('priceList-price21')}</td>
             </tr>
             <tr>
-              <td>apartament 4 osobowy</td>
-              <td>400 zł/dobę</td>
-              <td>570 zł/dobę</td>
-              <td>570 zł/dobę</td>
-              <td>690 zł/dobę</td>
+              <td>{t('priceList-type7')}</td>
+              <td>{t('priceList-price22')}</td>
+              <td>{t('priceList-price23')}</td>
+              <td>{t('priceList-price24')}</td>
+              <td>{t('priceList-price25')}</td>
             </tr>
             <tr>
-              <td>apartament 4 osobowy z balkonem z widokiem na kanał</td>
-              <td>400 zł/dobę</td>
-              <td>570 zł/dobę</td>
-              <td>570 zł/dobę</td>
-              <td>690 zł/dobę</td>
+              <td>{t('priceList-type8')}</td>
+              <td>{t('priceList-price26')}</td>
+              <td>{t('priceList-price27')}</td>
+              <td>{t('priceList-price28')}</td>
+              <td>{t('priceList-price29')}</td>
             </tr>
             <tr>
-              <td>
-                apartament 3 osobowy z dużym tarasem z widokiem na kanał Chełst*
-              </td>
-              <td>380 zł/dobę</td>
-              <td>490 zł/dobę</td>
-              <td>490 zł/dobę</td>
-              <td>610 zł/dobę</td>
+              <td>{t('priceList-type9')}</td>
+              <td>{t('priceList-price30')}</td>
+              <td>{t('priceList-price31')}</td>
+              <td>{t('priceList-price32')}</td>
+              <td>{t('priceList-price33')}</td>
             </tr>
             <tr>
-              <td>
-                apartament 2 osobowy z dużym tarasem z widokiem na kanał Chełst*
-              </td>
-              <td>340 zł/dobę</td>
-              <td>450 zł/dobę</td>
-              <td>450 zł/dobę</td>
-              <td>570 zł/dobę</td>
+              <td>{t('priceList-type10')}</td>
+              <td>{t('priceList-price34')}</td>
+              <td>{t('priceList-price35')}</td>
+              <td>{t('priceList-price36')}</td>
+              <td>{t('priceList-price37')}</td>
             </tr>
             <tr>
-              <td>apartament 3 osobowy bez tarasu*</td>
-              <td>350 zł/dobę</td>
-              <td>460 zł/dobę</td>
-              <td>460 zł/dobę</td>
-              <td>550 zł/dobę</td>
+              <td>{t('priceList-type11')}</td>
+              <td>{t('priceList-price38')}</td>
+              <td>{t('priceList-price39')}</td>
+              <td>{t('priceList-price40')}</td>
+              <td>{t('priceList-price41')}</td>
             </tr>
             <tr>
-              <td>apartament 2 osobowy bez tarasu*</td>
-              <td>310 zł/dobę</td>
-              <td>420 zł/dobę</td>
-              <td>420 zł/dobę</td>
-              <td>510 zł/dobę</td>
+              <td>{t('priceList-type12')}</td>
+              <td>{t('priceList-price42')}</td>
+              <td>{t('priceList-price43')}</td>
+              <td>{t('priceList-price44')}</td>
+              <td>{t('priceList-price45')}</td>
             </tr>
           </table>
-          <p>* pokój o mniejszym metrażu, skosy</p>
+          <p>{t('priceList1')}</p>
           <table>
             <tr>
               <td></td>
-              <td>SEZON NISKI</td>
-              <td>SEZON ŚREDNI</td>
-              <td>SEZON ŚREDNI +</td>
-              <td>SEZON WYSOKI</td>
+              <td>{t('priceList-season1')}</td>
+              <td>{t('priceList-season2')}</td>
+              <td>{t('priceList-season3')}</td>
+              <td>{t('priceList-season4')}</td>
             </tr>
             <tr>
-              <td>obowiązuje w terminie:</td>
-              <td>19.09-30.04 (z wyłączeniem pakietów)</td>
+              <td>{t('priceList3')}</td>
+              <td>19.09-30.04 {t('priceList4')}</td>
               <td>28.05-2.06</td>
               <td>30.04-3.05</td>
               <td>10.07-22.08</td>
             </tr>
             <tr>
-              <td>obowiązuje w terminie:</td>
+              <td>{t('priceList3')}</td>
               <td>3.05-28.05</td>
               <td>6.06-25.06</td>
               <td>2.06-6.06</td>
               <td>-</td>
             </tr>
             <tr>
-              <td>obowiązuje w terminie:</td>
+              <td>{t('priceList3')}</td>
               <td>-</td>
               <td>22.08-19.09</td>
               <td>25.06-10.07</td>
@@ -350,85 +342,59 @@ const PriceList = () => {
           </table>
         </div>
         <ul className="price-list-list">
-          <li>
-            doba rozpoczyna się od godziny 15:00 trwa do godziny 11:00 dnia
-            następnego
-          </li>
-          <li>
-            w cenę pokoju wliczona jest opłata klimatyczna i 8% stawka VAT
-          </li>
-          <li>płatność za pobyt pobierana jest w dniu meldunku</li>
-          <li>
-            oferent zastrzega sobie możliwość zmiany ceny w trakcie
-            obowiązującej taryfy
-          </li>
-          <li>cena pokoju zawiera śniadanie</li>
-          <li>istnieje możliwość wykupienia obiadokolacji w cenie 69 zł</li>
-          <li>dostawka w cenie 100 zł/doba</li>
-          <li>parking płatny 20 zł doba (brak możliwości rezerwacji)</li>
-          <li>
-            przedłużenie doby hotelowej 100 zł (opcja dostępna tylko w przypadku
-            dostępności pokoi)
-          </li>
-          <li>podane ceny są wartościami brutto</li>
-          <li>cena za 1 dobę pobytu małego zwierzęcia - 50 zł</li>
+          <li>{t('priceList5')}</li>
+          <li>{t('priceList6')}</li>
+          <li>{t('priceList7')}</li>
+          <li>{t('priceList8')}</li>
+          <li>{t('priceList9')}</li>
+          <li>{t('priceList10')}</li>
+          <li>{t('priceList11')}</li>
+          <li>{t('priceList12')}</li>
+          <li>{t('priceList13')}</li>
+          <li>{t('priceList14')}</li>
+          <li>{t('priceList15')}</li>
         </ul>
         <div className="text price-list-text">
-          <h1>1. REZERWACJA POBYTU ODBYWA SIĘ WEDŁUG PONIŻSZYCH ZASAD</h1>
+          <h1>1.{t('priceList16')}</h1>
           <p>
-            <strong>1.1</strong> Rezerwacji można dokonać telefonicznie + 48 723
-            724 722 lub mailem (recepcja@grandleba.pl)
+            <strong>1.1</strong>
+            {t('priceList17')} (recepcja@grandleba.pl)
           </p>
           <p>
-            <strong>1.2</strong> Po otrzymaniu potwierdzenia dostępności terminu
-            należy wpłacić opłatę rezerwacyjną w wysokości 40% sumarycznej kwoty
-            pobytu.
+            <strong>1.2</strong>
+            {t('priceList18')}
           </p>
           <p>
-            <strong>1.3</strong> Opłatę rezerwacyjną należy wpłacić w terminie 3
-            dni roboczych gdy do terminu rezerwacji jest mniej niż 21 dni, 7 dni
-            gdy od daty potwierdzenia rezerwacji do terminu jest więcej niż 21
-            dni.
+            <strong>1.3</strong>
+            {t('priceList19')}
           </p>
           <p>
-            <strong>1.4</strong> Po otrzymaniu wymaganej wpłaty rezerwacyjnej,
-            rezerwacja staje się gwarantowana, o czym informujemy Państwa
-            telefonicznie bądź mailowo.
+            <strong>1.4</strong>
+            {t('priceList20')}
           </p>
           <p>
-            <strong>1.5</strong> Pozostałą kwotę należy uregulować w dniu
-            przyjazdu. W dniu wyjazdu lub każdego dnia regulują Państwo
-            dodatkowe zobowiązania wynikające z zamówień dodatkowych w trakcie
-            pobytu.
+            <strong>1.5</strong>
+            {t('priceList21')}
           </p>
-          <h1>
-            2. WARUNKI REZYGNACJI Z REZERWACJI (Indywidualnych i pakietowych)
-          </h1>
+          <h1>2.{t('priceList22')}</h1>
           <p>
-            <strong>2.1</strong> Jeżeli od rezerwacji do terminu pobytu jest
-            więcej niż 60 dni zawracamy opłatę rezerwacyjną w całości, lub można
-            przenieść ją na inny termin, uzgodniony z recepcją hotelu.
+            <strong>2.1</strong>
+            {t('priceList23')}
           </p>
           <p>
-            <strong>2.2</strong> Jeżeli rezygnacja z rezerwacji następuje w
-            terminie do 60 dni przed zarezerwowanym pobytem, opłaty
-            rezerwacyjnej nie zwracamy.
+            <strong>2.2</strong>
+            {t('priceList24')}
           </p>
           <p>
-            <strong>2.3</strong> Bez kosztowa zmiana rezerwacji możliwa jest na
-            14 dni przed planowaną datą przyjazdu (przy uwzględnieniu
-            dostępności pokoi hotelowych). Każdorazowa zmiana wymaga
-            wygenerowania nowego potwierdzenia rezerwacji. Skrócenie pobytu
-            traktowane jest jako anulacja rezerwacji i wymaga opłaty za cały
-            wcześniej zarezerwowany termin.
+            <strong>2.3</strong>
+            {t('priceList25')}
           </p>
           <p>
-            <strong>2.4</strong> Wpłata opłaty rezerwacyjnej na wskazany nr
-            konta lub bezpośrednio w recepcji jest równoznaczna z akceptacją
-            „Warunków rezygnacji z rezerwacji”.
+            <strong>2.4</strong>
+            {t('priceList26')}
           </p>
           <p>
-            <strong>Dane do przelewu</strong>
+            <strong>{t('priceList27')}</strong>
           </p>
           <p>
             <strong>ŁEBA PARK s.c.</strong>
@@ -438,19 +404,19 @@ const PriceList = () => {
             84-360 Nowęcin
             <br />
             <br />
-            <strong>konto Pekao S.A.</strong>
+            <strong>Pekao S.A.</strong>
             <br />
             <strong>SWIFT:</strong> PKOPPLPW
             <br />
             <strong>IBAN:</strong> PL 03 1240 5790 1111 0000 5507 9266
           </p>
           <p>
-            <strong>2.5</strong> Zwrot środków możliwy jest jedynie na konto, z
-            którego został dokonany przelew.
+            <strong>2.5</strong>
+            {t('priceList28')}
           </p>
           <p>
-            <strong>2.6</strong> Zwrot środków na kartę możliwy jest jedynie na
-            tę kartę, z której zostały pobrane środki.
+            <strong>2.6</strong>
+            {t('priceList29')}
           </p>
         </div>
       </div>

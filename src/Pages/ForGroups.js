@@ -1,38 +1,29 @@
+import useMobile from '../CustomHooks/useMobile';
+import { useTranslation } from 'react-i18next';
 import Footer from '../Components/Footer/Footer';
 import Navbar from '../Components/Navbar/Navbar';
 import Logo from '../Components/Logo/Logo';
-import useMobile from '../CustomHooks/useMobile';
 
 const ForGroups = () => {
   const isMobile = useMobile();
+  const { t } = useTranslation();
   return (
     <>
       <Navbar isMobile={isMobile} />
       <div className="container">
         {isMobile && <Logo />}
-        <h1 className="header for-groups-header">
-          OFERTA DLA GRUP ZORGANIZOWANYCH
-        </h1>
+        <h1 className="header for-groups-header">{t('groups1')}</h1>
         <p className="text">
-          Grand Łeba to doskonałe miejsce do wypoczynku zarówno dla gości
-          indywidualnych jak i dla grup zorganizowanych, które szukają
-          kameralnego miejsca nad polskim morzem. Nasz obiekt to idealny wybór,
-          jeśli chcą Państwo zorganizować szkolenie, konferencje, spotkanie
-          integracyjne lub inną imprezę okolicznościową.
+          {t('groups2')}
           <br />
           <br />
-          Takich okazji może być wiele, wszystko zależy od Państwa chęci oraz
-          możliwości. Zapewniamy, że odpowiemy na wszelkie Państwa sugestie, aby
-          sprostać Państwa oczekiwaniom.
+          {t('groups3')}
           <br />
           <br />
-          Oferujemy szeroki zakres usług od samych noclegów ze śniadaniami po
-          pobyty z pełnym wyżywieniem, wynajęciem sali, przerwami kawowymi
-          podczas konferencji itd.
+          {t('groups4')}
           <br />
           <br />
-          W celu uzyskania jakichkolwiek informacji oraz przygotowania
-          indywidualnej oferty prosimy o kontakt.
+          {t('groups5')}
           <br />
           <br />
           <strong>email: biuro@grandleba.pl</strong>

@@ -1,121 +1,97 @@
+import useMobile from '../CustomHooks/useMobile';
+import { useTranslation } from 'react-i18next';
+
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import Logo from '../Components/Logo/Logo';
 
-import useMobile from '../CustomHooks/useMobile';
-
 const Privacy = () => {
   const isMobile = useMobile();
+  const { t } = useTranslation();
   return (
     <>
       <Navbar isMobile={isMobile} />
       <div className="container container-parking">
         {isMobile && <Logo />}
-        <h1 className="header">POLITYKA PRYWATNOŚCI</h1>
+        <h1 className="header">{t('privacy1')}</h1>
         <p className="text text-parking">
-          Informacja o danych osobowy dla gości Grand Łeba w Łebie
+          {t('privacy2')}
+          <br />
+          <strong>1.{t('privacy3')}</strong>
+          <br />
+          {t('privacy4')}
           <br />
           <br />
-          <strong>1. Administrator danych</strong>
+          <strong>2.{t('privacy5')}</strong>
           <br />
-          Administratorem danych osobowych gości hotelowych jest firma „Łeba
-          Park” S.C. W. Słota, A. Becker z siedzibą w Nowęcinie przy ulicy
-          Kolonijnej 24,84-360 Nowęcin.
+          {t('privacy6')}
           <br />
+          <strong>2.1.</strong>
+          {t('privacy7')}
           <br />
-          <strong>
-            2. Cele przetwarzania danych osobowych gości hotelowych
-          </strong>
+          <strong>2.2.</strong>
+          {t('privacy8')}
           <br />
-          Celem dla których Hotel przetwarza dane osobowe jest zawarcie i
-          realizacja umowy o świadczenie usług hotelarskich. Ponadto celem
-          przetwarzania danych osobowych przez Hotel jest:
-          <br />
-          <strong>2.1.</strong> dochodzenie ewentualnych roszczeń przez Hotel w
-          związku z poniesioną przez Hotel szkodą wyrządzoną przez gościa, lub
-          obrona przed roszczeniami gościa w stosunku do Hotelu,
-          <br />
-          <strong>2.2.</strong> udokumentowanie wykonania usługi dla celów
-          podatkowych, <br />
-          <strong>2.3.</strong> zapewnienie najwyższej jakości usług dla gości
-          hotelowych.
+          <strong>2.3.</strong>
+          {t('privacy9')}
           <br />
           <br />
-          W przypadku, gdy gość wyraził zgodę na przetwarzanie danych osobowych
-          w celach marketingowych, Hotel przetwarza dane w tym celu, tj. w celu
-          kierowania informacji marketingowych i ofert o swoich produktach i
-          usługach. Ponadto Hotel przetwarza dane osobowe gości gromadzone przez
-          monitoring hotelowy w celu zapewnienia bezpieczeństwa gościom
-          hotelowym i innym osobą przebywającym na terenie Hotelu.
+          {t('privacy10')}
           <br /> <br />
-          <strong>3. Podstawa prawna przetwarzania danych osobowych</strong>
+          <strong>3.{t('privacy11')}</strong>
           <br />
-          Podstawą prawną przetwarzania danych osobowych gościa pozyskanych
-          przez Hotel jest umowa o świadczenie usług hotelarskich. Podstawą
-          prawną przetwarzania danych gościa wykorzystywanych w celach
-          marketingowych jest zgoda gościa. Hotel informuje, że zgoda ta może
-          być w każdym momencie wycofana. Wycofanie zgody nie wpływa na ważność
-          przetwarzania, które miało miejsce przed cofnięciem zgody.
+          {t('privacy12')}
           <br />
-          Podstawą prawną przetwarzania danych osobowych gościa przez monitoring
-          jest ochrona jego żywotnych interesów oraz ochrona żywotna ochrona
-          innych osób fizycznych, jak również usprawiedliwiony cel
-          administratora.
+          {t('privacy13')}
           <br /> <br />
-          <strong>4. Komu mogą zostać przekazane dane osobowe?</strong>
+          <strong>4.{t('privacy14')}</strong>
           <br />
-          Hotel przekazuje dane następującym kategoriom podmiotów:
+          {t('privacy15')}
           <br />
-          <strong>4.1.</strong> firmom świadczącym usługi wsparcia IT hotelu
-          oraz dostarczającym oprogramowanie informatyczne,
+          <strong>4.1.</strong>
+          {t('privacy16')}
           <br />
-          <strong>4.2.</strong> firmom księgowym świadczącym usługi obsługi
-          księgowej, <br />
-          <strong>4.3.</strong> firmom transportowym i taksówkarskim w sytuacji
-          zamówienia przez gościa transportu lub przesyłki kurierskiej,
+          <strong>4.2.</strong>
+          {t('privacy17')}
           <br />
-          <strong>4.4.</strong> firmom (kancelariom) prawniczym świadczącym
-          usługi doradztwa prawnego i zastępstwa procesowego.
+          <strong>4.3.</strong>
+          {t('privacy18')}
+          <br />
+          <strong>4.4.</strong>
+          {t('privacy19')}
           <br /> <br />
-          <strong>5. Jak długo dane osobowe będą przetwarzane?</strong>
+          <strong>5.{t('privacy20')}</strong>
           <br />
-          <strong>5.1.</strong> Dane osobowe:
+          <strong>5.1.</strong>
+          {t('privacy21')}
           <br />
-          <strong>5.1.1.</strong> pozyskane w związku z zawartą umową o
-          świadczenie usług hotelarskich będą przetwarzane przez okres
-          przedawnienia roszczeń podatkowych lub roszczeń cywilnoprawnych Hotelu
-          lub gościa, w zależności które z tych zdarzeń nastąpi później,
+          <strong>5.1.1.</strong>
+          {t('privacy22')}
           <br />
-          <strong>5.1.2.</strong> pozyskane na podstawie zgody w celach
-          marketingowych będą przetwarzane przez okres ważności zgody na cele
-          marketingowe,
+          <strong>5.1.2.</strong>
+          {t('privacy23')}
           <br />
-          <strong>5.1.3.</strong> pozyskane w związku z monitoringiem będą
-          przetwarzane przez 7 dni od dnia utrwalenia, a następnie zostaną
-          trwale usunięte.
+          <strong>5.1.3.</strong>
+          {t('privacy24')}
           <br />
-          <strong>5.2.</strong> Prawa gościa w związku z przetwarzaniem danych
-          osobowych:
+          <strong>5.2.</strong>
+          {t('privacy25')}
           <br />
-          <strong>5.2.1.</strong> Każdy gość ma prawo dostępu do danych
-          osobowych, ich sprostowania, usunięcia lub ograniczenia przetwarzania.
-          Ponadto, każdy gość ma prawo do wniesienia sprzeciwu wobec
-          przetwarzania. Dostęp do danych jest możliwy w siedzibie Hotelu.
-          Ponadto, Hotel udostępnia adres biuro@grandleba.pl za pomocą którego
-          można kontaktować się w sprawie danych osobowych,
+          <strong>5.2.1.</strong>
+          {t('privacy26')}
           <br />
-          <strong>5.2.2.</strong> Wniesienie skargi w związku z przetwarzaniem
-          danych osobowych, <br />
-          <strong>5.2.3.</strong> Każdy gość ma prawo wniesienia skargi do
-          organu nadzorczego, którym jest Generalny Inspektor Danych Osobowych,
-          ul. Stawki 2 00-193 Warszawa.
+          <strong>5.2.2.</strong>
+          {t('privacy27')}
+          <br />
+          <strong>5.2.3.</strong>
+          {t('privacy28')}
           <br />
           <br />
-          <strong>6.</strong>Czy podanie danych osobowych jest wymogiem umownym
-          lub ustawowym ?<br />
-          <strong>6.1.</strong> Każdy gość ma prawo wniesienia skargi do organu
-          nadzorczego, którym jest Generalny Inspektor Danych Osobowych, ul.
-          Stawki 2 00-193 Warszawa.
+          <strong>6.</strong>
+          {t('privacy29')}
+          <br />
+          <strong>6.1.</strong>
+          {t('privacy30')}
         </p>
       </div>
       <Footer />

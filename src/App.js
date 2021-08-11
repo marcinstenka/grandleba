@@ -12,6 +12,7 @@ import Apartments from './Pages/Apartments';
 import Parking from './Pages/Parking';
 import Privacy from './Pages/Privacy';
 import Contact from './Pages/Contact';
+import Page404 from './Pages/Page404';
 
 // swiper.js initialization
 import 'swiper/swiper-bundle.css';
@@ -39,12 +40,13 @@ function App() {
         <Route exact path="/restauracja" component={Restaurant} />
         <Route exact path="/cennik" component={PriceList} />
         <Route exact path="/dla-grup" component={ForGroups} />
+        <Route exact path="/kontakt" component={Contact} />
         <Route exact path="/bezpieczny-pobyt" component={SafeStay} />
         <Route exact path="/nowa-inwestycja" component={NewInvestment} />
         <Route exact path="/apartamenty" component={Apartments} />
         <Route exact path="/parking" component={Parking} />
         <Route exact path="/polityka-prywatnosci" component={Privacy} />
-        <Route exact path="/kontakt" component={Contact} />
+        <Route component={Page404} />
       </Switch>
     </BrowserRouter>
   );

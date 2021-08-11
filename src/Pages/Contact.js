@@ -1,17 +1,20 @@
+import { useTranslation } from 'react-i18next';
+import useMobile from '../CustomHooks/useMobile';
+
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import Logo from '../Components/Logo/Logo';
 
-import useMobile from '../CustomHooks/useMobile';
-
 const Contact = () => {
   const isMobile = useMobile();
+  const { t } = useTranslation();
+
   return (
     <>
       <Navbar isMobile={isMobile} />
       <div className="container container-contact">
         {isMobile && <Logo />}
-        <h1 className="header">Kontakt</h1>
+        <h1 className="header">{t('contact1')}</h1>
         <div className="contact-map">
           <iframe
             title="Mapa Grand Łeba"
@@ -19,11 +22,10 @@ const Contact = () => {
           ></iframe>
         </div>
         <p className="text">
-          Dokładamy wszelkich starań, aby Państwa pobyt w Grand Łeba był
-          niezapomniany.
+          {t('contact2')}
           <br />
-          <br />W razie jakichkolwiek pytań zapraszamy do kontaktu
-          telefonicznego lub pocztowego pod adresem:
+          <br />
+          {t('contact3')}
           <br />
           <strong>
             Grand Łeba
@@ -34,15 +36,15 @@ const Contact = () => {
           <br />
           <br />
           <a href="tel:+48 723 724 722">
-            <strong>Telefon:</strong>+48 723 724 722
+            <strong>{t('contact4')}</strong>+48 723 724 722
           </a>
           <br />
           <a href="mailto: recepcja@grandleba.pl">
-            <strong>E-mail</strong>: recepcja@grandleba.pl
+            <strong>E-mail:</strong>: recepcja@grandleba.pl
           </a>
           <br />
           <br />
-          kontakt w sprawie uwag, sugestii, współpracy:
+          {t('contact5')}
           <br />
           <a href="mailto:biuro@grandleba.pl">
             {' '}

@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle as fasCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import { faUtensils as fasUtensils } from '@fortawesome/free-solid-svg-icons';
@@ -18,6 +19,7 @@ import HeroImage2 from '../../assets/hero-image2.jpg';
 import HeroImage3 from '../../assets/hero-image3.jpg';
 
 const Hero = ({ isMobile }) => {
+  const { t } = useTranslation();
   return (
     <div className="container">
       {isMobile && <Logo />}
@@ -53,9 +55,9 @@ const Hero = ({ isMobile }) => {
         </Swiper>
       </div>
       <div data-aos="fade-up" className="hero-welcome">
-        <h1>Witaj w Grand Łeba</h1>
+        <h1>{t('hotel1')}</h1>
         <br />
-        <h3>komfortowe noclegi w centrum Łeby podczas wakacji!</h3>
+        <h3>{t('hotel2')}</h3>
       </div>
       <div className="hero-images">
         <div data-aos="fade-up" className="hero-image">
@@ -63,8 +65,8 @@ const Hero = ({ isMobile }) => {
             <img src={HeroImage1} alt="Plaża bardzo blisko hotelu!" />
           </div>
 
-          <h5>tylko 6* minut do piaszczystej plaży</h5>
-          <p>*zgodnie z trasą z GoogleMaps</p>
+          <h5>{t('hotel3')}</h5>
+          <p>{t('hotel4')}</p>
         </div>
         <div data-aos="fade-up" className="hero-image">
           <div className="image-wrapper">
@@ -79,7 +81,7 @@ const Hero = ({ isMobile }) => {
             9,5 - Guest Review Awards 2019, <br />
             9,4 - Guest Review Award 2018
           </h5>
-          <p>...poprawiamy standardy obsługi.</p>
+          <p>{t('hotel5')}.</p>
         </div>
         <div data-aos="fade-up" className="hero-image">
           <div className="image-wrapper">
@@ -89,49 +91,34 @@ const Hero = ({ isMobile }) => {
             />
           </div>
 
-          <h5>zwiedzaj Łeba Park z Grand Łeba</h5>
-          <p>
-            W cenie noclegu w Grand Łeba (3 noclegi + wyżywienie) wstęp do Łeba
-            Parku GRATIS!
-          </p>
+          <h5>{t('hotel6')}</h5>
+          <p>{t('hotel7')}</p>
         </div>
       </div>
       <div className="hero-info">
-        <h2 data-aos="fade-up">Udany wypoczynek w Łebie?</h2>
-        <h4 data-aos="fade-up">
-          Grand Łeba! Noclegi, parking, doskonała obsługa !
-        </h4>
+        <h2 data-aos="fade-up">{t('hotel8')}</h2>
+        <h4 data-aos="fade-up">{t('hotel9')}</h4>
         <div className="info-wrapper">
           <div data-aos="fade-up" className="info-item">
             <div className="info-item__header">
-              <h3>Parking monitorowany</h3>
+              <h3>{t('hotel10')}</h3>
               <FontAwesomeIcon icon={fasCheckCircle} />
             </div>
-            <p>
-              dla naszych gości, udostępniamy monitorowany parking w samym
-              centrum Łeby. Nie martw się o to, gdzie i na ile zaparkować swój
-              samochód. W sezonie letnim poza parkingiem bezpośrednio przy
-              obiekcie, dysponujemy również dwoma innymi parkingami (2 minuty/4
-              minuty drogi). Miejsca parkingowe przydzielane są zgodnie z
-              dostępnością podczas zameldowania.
-            </p>
+            <p>{t('hotel11')}</p>
           </div>
           <div data-aos="fade-up" className="info-item">
             <div className="info-item__header">
-              <h3>Restauracja</h3>
+              <h3>{t('hotel12')}</h3>
               <FontAwesomeIcon icon={fasUtensils} />
             </div>
-            <p>W cenie rezerwowanego pokoju zawiera się śniadanie.</p>
+            <p>{t('hotel13')}</p>
           </div>
           <div data-aos="fade-up" className="info-item">
             <div className="info-item__header">
-              <h3>Wsparcie obsługi</h3>
+              <h3>{t('hotel14')}</h3>
               <FontAwesomeIcon icon={fasComment} />
             </div>
-            <p>
-              Masz pytania związane z organizacją pobytu? Chętnie pomożemy! Po
-              prostu zadaj nam pytanie...
-            </p>
+            <p>{t('hotel15')}</p>
           </div>
           <div data-aos="fade-up" className="info-item">
             <div className="info-item__header">
@@ -140,17 +127,7 @@ const Hero = ({ isMobile }) => {
               </h3>
               <FontAwesomeIcon icon={fasUsers} />
             </div>
-            <p>
-              Nasz obiekt to idealne miejsce dla osób chcących odpocząć w
-              atmosferze ciszy i spokoju. Jesteśmy jednym z niewielu miejsc w
-              Polsce przeznaczonym wyłącznie dla osób dorosłych i młodzieży
-              powyżej 13 roku życia (jedynym w Łebie). Rezerwując pobyt w naszym
-              obiekcie mogą mieć Państwo pewność, że chwile relaksu nie zostaną
-              zakłócone gwarem wywołanym przez kilkuletnie pociechy. Grand Łeba
-              to idealne miejsce dla osób ceniących sobie odpoczynek w ciszy i
-              spokoju, lubujących się w prostych i eleganckich wnętrzach oraz
-              miłośników wyśmienitego jedzenia.
-            </p>
+            <p>{t('hotel16')}</p>
           </div>
         </div>
       </div>

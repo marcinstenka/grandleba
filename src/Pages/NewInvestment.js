@@ -1,3 +1,7 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import useMobile from '../CustomHooks/useMobile';
+import { useTranslation } from 'react-i18next';
+
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import Logo from '../Components/Logo/Logo';
@@ -7,19 +11,15 @@ import InvestmentImage3 from '../assets/investment-image3.jpg';
 import InvestmentImage4 from '../assets/investment-image4.jpg';
 import InvestmentImage5 from '../assets/investment-image5.jpg';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import useMobile from '../CustomHooks/useMobile';
 const NewInvestment = () => {
   const isMobile = useMobile();
+  const { t } = useTranslation();
   return (
     <>
       <Navbar isMobile={isMobile} />
       <div className="container">
         {isMobile && <Logo />}
-        <h1 className="header new-investment-header">
-          GRAND ŁEBA – NOWA INWESTYCJA
-        </h1>
+        <h1 className="header new-investment-header">{t('newInvestment1')}</h1>
         <div className="new-investment-wrapper">
           <div className="new-investment-slider">
             <Swiper
@@ -52,24 +52,18 @@ const NewInvestment = () => {
             </Swiper>
           </div>
           <p className="text text-new-investment">
-            <strong>Nowoczesny obiekt</strong> - Grand Łeba, oddany do użytku w
-            2018 roku, położony jest w centrum miasta, tuż przy kanale Chełst.
-            Rozpościera się stąd fantastyczny widok na Łebę. Będąc naszym
-            gościem skorzystasz z dobrodziejstw centrum miasta, jednocześnie
-            czerpiąc najlepsze doznania wynikające z umiejscowienia naszego
-            hotelu w zaciszu spokojnej ulicy.
+            <strong>{t('newInvestment2')}</strong>
+            {t('newInvestment3')}
             <br />
             <br />
-            To zaledwie <strong>6 minut</strong> spacerem do pięknej,
-            piaszczystej plaży, <strong>100m</strong> od centralnego placu
-            miasta oraz restauracji, kawiarni, klubów.
+            {t('newInvestment4')}
+            <strong>{t('newInvestment5')}</strong>
+            {t('newInvestment6')}
+            <strong>{t('newInvestment7')}</strong>
+            {t('newInvestment8')}
             <br />
             <br />
-            Do Państwa dyspozycji oferujemy pokoje 1,2,3,4 - osobowe oraz
-            komfortowe apartamenty. Wszystkie pokoje są elegancko umeblowane i
-            utrzymane w ciepłych kolorach. W każdym pokoju znajduje się sejf,
-            nowoczesna łazienka z prysznicem (ręczniki i mydełko na wyposażeniu)
-            oraz bezpłatny dostęp do sieci WiFi.
+            {t('newInvestment9')}
           </p>
         </div>
         <div className="new-investment-wrapper">
@@ -96,14 +90,10 @@ const NewInvestment = () => {
             </Swiper>
           </div>
           <p className="text text-new-investment">
-            Nasza restauracja z drink barem i klimatycznym tarasem serwuje
-            znakomite dania kuchni polskiej i regionalnej, koktajle, drinki oraz
-            wyśmienitą kawę - doskonałe dopełnienie pełnego wrażeń dnia
-            spędzonego na świeżym powietrzu.
+            {t('newInvestment10')}
             <br />
             <br />
-            Wszystko to sprawia, że w Grand Łeba spędzisz niezapomniany letni
-            wypoczynek.
+            {t('newInvestment11')}
           </p>
         </div>
       </div>

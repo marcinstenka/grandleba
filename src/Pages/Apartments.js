@@ -1,40 +1,34 @@
+import useMobile from '../CustomHooks/useMobile';
+import { useTranslation } from 'react-i18next';
+
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import Logo from '../Components/Logo/Logo';
 
-import useMobile from '../CustomHooks/useMobile';
-
 const Apartments = () => {
   const isMobile = useMobile();
+  const { t } = useTranslation();
   return (
     <>
       <Navbar isMobile={isMobile} />
       <div className="container">
         {isMobile && <Logo />}
-        <h1 className="header">Apartamenty</h1>
+        <h1 className="header">{t('apartments1')}</h1>
         <p className="apartments-info">
-          <strong>klient:</strong> prodzina z dziećmi, pary
+          <strong>{t('apartments2')}</strong> {t('apartments3')}
           <br />
-          <strong>info:</strong> pokoje dla osób niepalących, WIFI, sejf, winda,
-          DVBT
+          <strong>{t('apartments4')}</strong> {t('apartments5')}
           <br />
-          <strong>wyposażenie łazienki:</strong> ręcznik, mydełko, szampon
+          <strong>{t('apartments6')}</strong> {t('apartments7')}
         </p>
         <p className="text text-apartments">
-          W ofercie Grand Łeba znajdują się Apartamenty. Z okien rozpościera się
-          widok na miasto Łeba lub kanał portowy Chełst. Na górnych
-          kondygnacjach z okien pokoi dostrzec można linię brzegową morza
-          Bałtyckiego.
+          {t('apartments8')}
           <br />
           <br />
-          Z przyjemnością spełnimy Wasze życzenia, aby pobyt w Grand Łeba
-          należał do niezapomnianych. Z myślą o rodzicach z dziećmi, możliwym
-          jest przygotowanie łóżeczka niemowlęcego. Grand Łeba dysponuje również
-          pokojami dwu osobowymi oraz apartamentami dwu sypialnianymi, istnieje
-          możliwość dostawki.
+          {t('apartments9')}
           <br />
           <br />
-          Oferujemy możliwość pobytu z małymi, nieuciążliwymi zwierzętami.
+          {t('apartments10')}
         </p>
       </div>
       <Footer />

@@ -1,4 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import useMobile from '../CustomHooks/useMobile';
+import { useTranslation } from 'react-i18next';
 import Navbar from '../Components/Navbar/Navbar';
 import Logo from '../Components/Logo/Logo';
 import Footer from '../Components/Footer/Footer';
@@ -12,9 +14,8 @@ import RoomsImage7 from '../assets/rooms-image7.jpg';
 import RoomsImage8 from '../assets/rooms-image8.jpg';
 import RoomsImage9 from '../assets/rooms-image9.jpg';
 
-import useMobile from '../CustomHooks/useMobile';
-
 const Rooms = () => {
+  const { t } = useTranslation();
   const isMobile = useMobile();
   return (
     <>
@@ -31,52 +32,77 @@ const Rooms = () => {
             autoplay={{ delay: 2000 }}
           >
             <SwiperSlide>
-              <img className="rooms-image1" src={RoomsImage1} alt="" />
+              <img
+                className="rooms-image1"
+                src={RoomsImage1}
+                alt="Wygodne i przytulne pokoje w Grand Łeba"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={RoomsImage2} alt="" />
+              <img
+                src={RoomsImage2}
+                alt="Wygodne i przytulne pokoje w Grand Łeba"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="rooms-image3" src={RoomsImage3} alt="" />
+              <img
+                className="rooms-image3"
+                src={RoomsImage3}
+                alt="Wygodne i przytulne pokoje w Grand Łeba"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={RoomsImage4} alt="" />
+              <img
+                src={RoomsImage4}
+                alt="Wygodne i przytulne pokoje w Grand Łeba"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="rooms-image5" src={RoomsImage5} alt="" />
+              <img
+                className="rooms-image5"
+                src={RoomsImage5}
+                alt="Wygodne i przytulne pokoje w Grand Łeba"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={RoomsImage6} alt="" />
+              <img
+                src={RoomsImage6}
+                alt="Wygodne i przytulne pokoje w Grand Łeba"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={RoomsImage7} alt="" />
+              <img
+                src={RoomsImage7}
+                alt="Wygodne i przytulne pokoje w Grand Łeba"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={RoomsImage8} alt="" />
+              <img
+                src={RoomsImage8}
+                alt="Wygodne i przytulne pokoje w Grand Łeba"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="rooms-image9" src={RoomsImage9} alt="" />
+              <img
+                className="rooms-image9"
+                src={RoomsImage9}
+                alt="Wygodne i przytulne pokoje w Grand Łeba"
+              />
             </SwiperSlide>
           </Swiper>
         </div>
         <p className="rooms-info">
-          <strong>info:</strong> pokoje dla osób niepalących, możliwość
-          przyjęcia małych, nieuciążliwych zwierząt, WIFI
+          <strong>{t('rooms1')}</strong>
+          {t('rooms2')}
         </p>
         <p className="text text-rooms">
-          W ofercie Grand Łeba znajdują się jedynie pokoje o podwyższonym
-          standardzie. Z okien rozpościera się widok na panoramę miasta Łeba lub
-          kanał portowy Chełst. Wszystkie pokoje Grand Łeba objęte są
-          kategorycznym zakazem palenia.
+          {t('rooms3')}
           <br />
           <br />
-          Z przyjemnością spełnimy Wasze życzenia, aby pobyt w Grand Łeba
-          należał do niezapomnianych. Grand Łeba dysponuje również pokojami dwu
-          osobowymi oraz apartamentami dwu sypialnianymi. Dla pokoi 2 osobowych
-          istnieje możliwość dostawki.
+          {t('rooms4')}
           <br />
           <br />
-          Oferujemy możliwość pobytu z małymi, nieuciążliwymi zwierzętami.
+          {t('rooms5')}
         </p>
       </div>
       <Footer />
