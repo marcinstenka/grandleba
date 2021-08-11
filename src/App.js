@@ -30,7 +30,7 @@ function App() {
     } else {
       Aos.init({ offset: 250 });
     }
-  }, []);
+  }, [isMobile]);
   return (
     <BrowserRouter basename="/grandleba/">
       <Switch>
