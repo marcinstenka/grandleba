@@ -4,15 +4,15 @@ import { useTranslation } from 'react-i18next';
 import Navbar from '../Components/Navbar/Navbar';
 import Logo from '../Components/Logo/Logo';
 import Footer from '../Components/Footer/Footer';
-import RoomsImage1 from '../assets/rooms-image1.jpg';
-import RoomsImage2 from '../assets/rooms-image2.jpg';
-import RoomsImage3 from '../assets/rooms-image3.jpg';
-import RoomsImage4 from '../assets/rooms-image4.jpg';
-import RoomsImage5 from '../assets/rooms-image5.jpg';
-import RoomsImage6 from '../assets/rooms-image6.jpg';
-import RoomsImage7 from '../assets/rooms-image7.jpg';
-import RoomsImage8 from '../assets/rooms-image8.jpg';
-import RoomsImage9 from '../assets/rooms-image9.jpg';
+import RoomsImage1 from '../assets/rooms-image1.webp';
+import RoomsImage2 from '../assets/rooms-image2.webp';
+import RoomsImage3 from '../assets/rooms-image3.webp';
+import RoomsImage4 from '../assets/rooms-image4.webp';
+import RoomsImage5 from '../assets/rooms-image5.webp';
+import RoomsImage6 from '../assets/rooms-image6.webp';
+import RoomsImage7 from '../assets/rooms-image7.webp';
+import RoomsImage8 from '../assets/rooms-image8.webp';
+import RoomsImage9 from '../assets/rooms-image9.webp';
 
 const Rooms = () => {
   const { t } = useTranslation();

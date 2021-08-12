@@ -5,11 +5,11 @@ import { useTranslation } from 'react-i18next';
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import Logo from '../Components/Logo/Logo';
-import InvestmentImage1 from '../assets/investment-image1.jpg';
-import InvestmentImage2 from '../assets/investment-image2.jpg';
-import InvestmentImage3 from '../assets/investment-image3.jpg';
-import InvestmentImage4 from '../assets/investment-image4.jpg';
-import InvestmentImage5 from '../assets/investment-image5.jpg';
+import InvestmentImage1 from '../assets/investment-image1.webp';
+import InvestmentImage2 from '../assets/investment-image2.webp';
+import InvestmentImage3 from '../assets/investment-image3.webp';
+import InvestmentImage4 from '../assets/investment-image4.webp';
+import InvestmentImage5 from '../assets/investment-image5.webp';
 
 const NewInvestment = () => {
   const isMobile = useMobile();

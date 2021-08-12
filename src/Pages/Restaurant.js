@@ -1,18 +1,20 @@
+import useMobile from '../CustomHooks/useMobile';
+import { useTranslation } from 'react-i18next';
+
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import Logo from '../Components/Logo/Logo';
-import RestaurantImage from '../assets/hotel-image5.jpg';
-
-import useMobile from '../CustomHooks/useMobile';
+import RestaurantImage from '../assets/hotel-image5.webp';
 
 const Restaurant = () => {
   const isMobile = useMobile();
+  const { t } = useTranslation();
   return (
     <>
       <Navbar isMobile={isMobile} />
       <div className="container">
         {isMobile && <Logo />}
-        <h1 className="header">Restauracja for You</h1>
+        <h1 className="header">{t('restaurant1')}</h1>
         <div className="restaurant-wrapper">
           <div className="restaurant-image">
             <img
@@ -21,15 +23,9 @@ const Restaurant = () => {
             />
           </div>
           <p className="text text-restaurant">
-            Zachęcamy Państwa do odwiedzin naszego klimatycznego i nastrojowego
-            Drink Baru, który dostępny jest przez cały rok, również dla osób nie
-            będących gośćmi Grand Łeba. Znajdziecie w nim Państwo szeroki wybór
-            alkoholi najwyższej klasy i klasycznych koktajli... Koneserzy mogą
-            liczyć także na starannie wyselekcjonowane kawy, herbaty oraz
-            pochodzące ze słynnych włoskich winnic wysokogatunkowe wina.
+            {t('restaurant2')}
             <br />
-            Podczas cieplejszych dni mają Państwo również do dyspozycji zaciszny
-            taras z widokiem na kanał Chełst.
+            {t('restaurant3')}
           </p>
         </div>
       </div>

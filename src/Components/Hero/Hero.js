@@ -14,9 +14,9 @@ import HotelImage4 from '../../assets/hotel-image4.webp';
 import HotelImage5 from '../../assets/hotel-image5.webp';
 import HotelImage6 from '../../assets/hotel-image6.webp';
 import HotelImage7 from '../../assets/hotel-image7.webp';
-import HeroImage1 from '../../assets/hero-image1.jpg';
-import HeroImage2 from '../../assets/hero-image2.jpg';
-import HeroImage3 from '../../assets/hero-image3.jpg';
+import HeroImage1 from '../../assets/hero-image1.webp';
+import HeroImage2 from '../../assets/hero-image2.webp';
+import HeroImage3 from '../../assets/hero-image3.webp';
 
 const Hero = ({ isMobile }) => {
   const { t } = useTranslation();
