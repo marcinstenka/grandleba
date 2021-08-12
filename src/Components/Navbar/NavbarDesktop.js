@@ -1,8 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
-import Logo from '../Logo/Logo';
+import LogoLeba from '../../assets/logo.png';
+
 import PlIcon from './../../assets/pl-icon.png';
 import GbIcon from './../../assets/gb-icon.png';
 import DeIcon from './../../assets/de-icon.png';
@@ -11,7 +13,12 @@ const NavbarDesktop = () => {
   return (
     <nav>
       <div className="logo-container">
-        <Logo />
+        <div className="logo">
+          <Link to="/">
+            <img src={LogoLeba} alt="Grand Łeba" />
+            <h3>{t('logo')}</h3>
+          </Link>
+        </div>
       </div>
       <div className="translation-icons">
         <div
