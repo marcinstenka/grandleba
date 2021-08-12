@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/grandleba/static/css/main.c8ab527b.chunk.css",
+    "main.css": "/grandleba/static/css/main.d8bbdeb6.chunk.css",
     "main.js": "/grandleba/static/js/main.6574a7c8.chunk.js",
     "main.js.map": "/grandleba/static/js/main.6574a7c8.chunk.js.map",
     "runtime-main.js": "/grandleba/static/js/runtime-main.be830745.js",
@@ -10,7 +10,7 @@
     "static/js/2.4f9cca68.chunk.js.map": "/grandleba/static/js/2.4f9cca68.chunk.js.map",
     "index.html": "/grandleba/index.html",
     "static/css/2.b2464f06.chunk.css.map": "/grandleba/static/css/2.b2464f06.chunk.css.map",
-    "static/css/main.c8ab527b.chunk.css.map": "/grandleba/static/css/main.c8ab527b.chunk.css.map",
+    "static/css/main.d8bbdeb6.chunk.css.map": "/grandleba/static/css/main.d8bbdeb6.chunk.css.map",
     "static/js/2.4f9cca68.chunk.js.LICENSE.txt": "/grandleba/static/js/2.4f9cca68.chunk.js.LICENSE.txt",
     "static/media/gb-icon.55e9e19a.png": "/grandleba/static/media/gb-icon.55e9e19a.png",
     "static/media/getFetch.cjs": "/grandleba/static/media/getFetch.582d29c4.cjs",
@@ -44,7 +44,7 @@
     "static/js/runtime-main.be830745.js",
     "static/css/2.b2464f06.chunk.css",
     "static/js/2.4f9cca68.chunk.js",
-    "static/css/main.c8ab527b.chunk.css",
+    "static/css/main.d8bbdeb6.chunk.css",
     "static/js/main.6574a7c8.chunk.js"
   ]
 }
