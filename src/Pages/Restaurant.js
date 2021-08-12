@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import Logo from '../Components/Logo/Logo';
-import RestaurantImage from '../assets/hotel-image5.webp';
+import RestaurantImage from '../assets/hotel-image5.jpg';
 
 const Restaurant = () => {
   const isMobile = useMobile();

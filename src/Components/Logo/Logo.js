@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import LogoLeba from '../../assets/logo.webp';
+import LogoLeba from '../../assets/logo.png';
 
 const Logo = () => {
   const { t } = useTranslation();

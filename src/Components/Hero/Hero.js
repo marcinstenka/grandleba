@@ -7,16 +7,16 @@ import { faComment as fasComment } from '@fortawesome/free-solid-svg-icons';
 import { faUsers as fasUsers } from '@fortawesome/free-solid-svg-icons';
 
 import Logo from '../Logo/Logo';
-import HotelImage1 from '../../assets/hotel-image1.webp';
-import HotelImage2 from '../../assets/hotel-image2.webp';
-import HotelImage3 from '../../assets/hotel-image3.webp';
-import HotelImage4 from '../../assets/hotel-image4.webp';
-import HotelImage5 from '../../assets/hotel-image5.webp';
-import HotelImage6 from '../../assets/hotel-image6.webp';
-import HotelImage7 from '../../assets/hotel-image7.webp';
-import HeroImage1 from '../../assets/hero-image1.webp';
-import HeroImage2 from '../../assets/hero-image2.webp';
-import HeroImage3 from '../../assets/hero-image3.webp';
+import HotelImage1 from '../../assets/hotel-image1.jpg';
+import HotelImage2 from '../../assets/hotel-image2.jpg';
+import HotelImage3 from '../../assets/hotel-image3.jpg';
+import HotelImage4 from '../../assets/hotel-image4.jpg';
+import HotelImage5 from '../../assets/hotel-image5.jpg';
+import HotelImage6 from '../../assets/hotel-image6.jpg';
+import HotelImage7 from '../../assets/hotel-image7.jpg';
+import HeroImage1 from '../../assets/hero-image1.jpg';
+import HeroImage2 from '../../assets/hero-image2.jpg';
+import HeroImage3 from '../../assets/hero-image3.jpg';
 
 const Hero = ({ isMobile }) => {
   const { t } = useTranslation();
