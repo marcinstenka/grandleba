@@ -8,7 +8,7 @@
    2.4 Footer
    2.5 Rooms & Apartments
    2.6 Price List
-   2.7 For Groups
+   2.7 Special Offer 
    2.8 Safe Stay 
    2.9 New Investment
    2.10 Parking
@@ -24,6 +24,7 @@
    3.8 Safe Stay
    3.9 New Investment
    3.10 Parking
+   3.11 Special Offer
 
 */
 
@@ -90,6 +91,10 @@ img {
 }
 .text a {
   color: var(--brown);
+}
+.text-warning {
+  color: red;
+  font-weight: bold;
 }
 .cookies {
   display: flex;
@@ -598,10 +603,17 @@ footer {
   padding: 10px 15px 0 15px;
 }
 
-/* 2.7 For Groups */
+/* 2.7 Special Offer  */
 
-.for-groups-header {
+.special-offer-header {
   font-size: 28px !important;
+}
+.special-offer-list {
+  padding: 5px 0 0 35px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: calc(var(--mainFontSize) + 2px);
+  color: var(--brown);
 }
 
 /* 2.8 Safe Stay */
@@ -689,7 +701,6 @@ footer {
 /* 3. Desktop */
 @media (min-width: 1000px) {
   /* 3.1 Global  */
-
   .header {
     font-size: 55px;
     padding: 50px 0 15px 0;
@@ -764,6 +775,7 @@ footer {
     margin: 0 0 0 4px;
     width: 20px;
   }
+
   @media (min-width: 1200px) {
     nav li {
       margin: 0 0 0 20px;
@@ -931,6 +943,10 @@ footer {
   .container-parking h4 {
     max-width: unset;
     font-size: 22px;
+  }
+  /* 3.11 Special Offer */
+  .special-offer-list {
+    padding: 5px 0 0 20px;
   }
 }
 

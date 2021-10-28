@@ -67,7 +67,11 @@ const NavbarDesktop = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/dla-grup" exact activeClassName="active-nav-link">
+          <NavLink
+            to="/oferta-specjalna"
+            exact
+            activeClassName="active-nav-link"
+          >
             {t('nav6')}
           </NavLink>
         </li>

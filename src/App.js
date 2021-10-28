@@ -5,7 +5,7 @@ import Hotel from './Pages/Hotel';
 import Rooms from './Pages/Rooms';
 import Restaurant from './Pages/Restaurant';
 import PriceList from './Pages/PriceList';
-import ForGroups from './Pages/ForGroups';
+import SpecialOffer from './Pages/SpecialOffer';
 import SafeStay from './Pages/SafeStay';
 import NewInvestment from './Pages/NewInvestment';
 import Apartments from './Pages/Apartments';
@@ -33,13 +33,13 @@ function App() {
     }
   }, [isMobile]);
   return (
-    <BrowserRouter basename="/grandleba/">
+    <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Hotel} />
         <Route exact path="/pokoje" component={Rooms} />
         <Route exact path="/restauracja" component={Restaurant} />
         <Route exact path="/cennik" component={PriceList} />
-        <Route exact path="/dla-grup" component={ForGroups} />
+        <Route exact path="/oferta-specjalna" component={SpecialOffer} />
         <Route exact path="/kontakt" component={Contact} />
         <Route exact path="/bezpieczny-pobyt" component={SafeStay} />
         <Route exact path="/nowa-inwestycja" component={NewInvestment} />

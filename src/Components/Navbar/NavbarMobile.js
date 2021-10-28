@@ -36,7 +36,7 @@ const NavbarMobile = () => {
             <Link to="/cennik">{t('nav5')}</Link>
           </li>
           <li>
-            <Link to="/dla-grup">{t('nav6')}</Link>
+            <Link to="/oferta-specjalna">{t('nav6')}</Link>
           </li>
           <li>
             <Link to="/kontakt">{t('nav7')}</Link>

@@ -22,7 +22,7 @@ const Rooms = () => {
       <Navbar isMobile={isMobile} />
       <div className="container">
         {isMobile && <Logo />}
-        <h1 className="header">Pokoje</h1>
+        <h1 className="header">{t('rooms1')}</h1>
         <div className="rooms-slider">
           <Swiper
             spaceBetween={20}
@@ -92,17 +92,17 @@ const Rooms = () => {
           </Swiper>
         </div>
         <p className="rooms-info">
-          <strong>{t('rooms1')}</strong>
-          {t('rooms2')}
+          <strong>{t('rooms2')}</strong>
+          {t('rooms3')}
         </p>
         <p className="text text-rooms">
-          {t('rooms3')}
-          <br />
-          <br />
           {t('rooms4')}
           <br />
           <br />
           {t('rooms5')}
+          <br />
+          <br />
+          {t('rooms6')}
         </p>
       </div>
       <Footer />
