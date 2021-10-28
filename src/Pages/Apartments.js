@@ -18,17 +18,15 @@ const Apartments = () => {
           <strong>{t('apartments2')}</strong> {t('apartments3')}
           <br />
           <strong>{t('apartments4')}</strong> {t('apartments5')}
-          <br />
-          <strong>{t('apartments6')}</strong> {t('apartments7')}
         </p>
         <p className="text text-apartments">
+          {t('apartments6')}
+          <br />
+          <br />
+          {t('apartments7')}
+          <br />
+          <br />
           {t('apartments8')}
-          <br />
-          <br />
-          {t('apartments9')}
-          <br />
-          <br />
-          {t('apartments10')}
         </p>
       </div>
       <Footer />
