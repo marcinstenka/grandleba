@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.81bfe6f6.chunk.css",
+    "main.css": "/static/css/main.4b85d644.chunk.css",
     "main.js": "/static/js/main.83ac9847.chunk.js",
     "main.js.map": "/static/js/main.83ac9847.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.725dcf22.js",
@@ -10,7 +10,7 @@
     "static/js/2.4f9cca68.chunk.js.map": "/static/js/2.4f9cca68.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.b2464f06.chunk.css.map": "/static/css/2.b2464f06.chunk.css.map",
-    "static/css/main.81bfe6f6.chunk.css.map": "/static/css/main.81bfe6f6.chunk.css.map",
+    "static/css/main.4b85d644.chunk.css.map": "/static/css/main.4b85d644.chunk.css.map",
     "static/js/2.4f9cca68.chunk.js.LICENSE.txt": "/static/js/2.4f9cca68.chunk.js.LICENSE.txt",
     "static/media/gb-icon.55e9e19a.png": "/static/media/gb-icon.55e9e19a.png",
     "static/media/getFetch.cjs": "/static/media/getFetch.582d29c4.cjs",
@@ -44,7 +44,7 @@
     "static/js/runtime-main.725dcf22.js",
     "static/css/2.b2464f06.chunk.css",
     "static/js/2.4f9cca68.chunk.js",
-    "static/css/main.81bfe6f6.chunk.css",
+    "static/css/main.4b85d644.chunk.css",
     "static/js/main.83ac9847.chunk.js"
   ]
 }
