@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import useMobile from '../CustomHooks/useMobile';
 import { useTranslation } from 'react-i18next';
 import Navbar from '../Components/Navbar/Navbar';
@@ -5,6 +6,11 @@ import Footer from '../Components/Footer/Footer';
 import Logo from '../Components/Logo/Logo';
 
 const PriceList = () => {
+  useEffect(() => {
+    fetch('https://hotelnadmorskileba.pl/pricelist.json')
+      .then(response => response.json())
+      .then(data => console.log(data));
+  });
   const isMobile = useMobile();
   const { t } = useTranslation();
   return (
