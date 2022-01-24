@@ -513,7 +513,7 @@ footer {
   table td {
     border-top: 1px solid #d3d3d3;
     border-left: 1px solid #d3d3d3;
-    padding: 12px 7px;
+    padding: 12px 8px;
     text-align: center;
     color: var(--brown);
   }

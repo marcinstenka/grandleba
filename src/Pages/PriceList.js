@@ -6,11 +6,11 @@ import Footer from '../Components/Footer/Footer';
 import Logo from '../Components/Logo/Logo';
 
 const PriceList = () => {
-  useEffect(() => {
-    fetch('https://hotelnadmorskileba.pl/pricelist.json')
-      .then(response => response.json())
-      .then(data => console.log(data));
-  });
+  // useEffect(() => {
+  //   fetch('https://hotelnadmorskileba.pl/pricelist.json')
+  //     .then(response => response.json())
+  //     .then(data => console.log(data));
+  // });
   const isMobile = useMobile();
   const { t } = useTranslation();
   return (
