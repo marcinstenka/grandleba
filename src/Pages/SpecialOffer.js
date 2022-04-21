@@ -12,7 +12,7 @@ const ForGroups = () => {
       <Navbar isMobile={isMobile} />
       <div className="container">
         {isMobile && <Logo />}
-        <div className="special-offer-section">
+        {/* <div className="special-offer-section">
           <h3 className="header special-offer-header">WIELKANOC NAD MORZEM</h3>
           <p className="subtext">15-18.04.2022 (3 noce)</p>
           <ul className="special-offer-list">
@@ -68,7 +68,7 @@ const ForGroups = () => {
             <br />
             Dopłata do pokoju z balkonem 50 zł/doba.
           </p>
-        </div>
+        </div> */}
         <h1 className="header special-offer-header">{t('specialOffer1')}</h1>
         <p className="text">
           {t('specialOffer2')}
