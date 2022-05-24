@@ -417,6 +417,10 @@ const PriceList = () => {
             <strong>2.6</strong>
             {t('priceList29')}
           </p>
+          <p>
+            <strong>2.7</strong>
+            {t('priceList30')}
+          </p>
         </div>
       </div>
       <Footer />
