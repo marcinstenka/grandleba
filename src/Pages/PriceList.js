@@ -224,7 +224,7 @@ const PriceList = () => {
         <div className="tables">
           <table>
             <tr>
-              <td>{t('priceList-header')} GRAND ŁEBA 2022</td>
+              <td>{t('priceList-header')} GRAND ŁEBA 2022/23</td>
               <td>{t('priceList-season1')}</td>
               <td>{t('priceList-season2')}</td>
               <td>{t('priceList-season3')}</td>
