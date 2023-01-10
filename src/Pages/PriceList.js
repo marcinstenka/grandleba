@@ -195,7 +195,7 @@ const PriceList = () => {
                 <h5>{t('priceList3')}</h5>
                 <h5>26.05 - 07.06</h5>
                 <h5>{t('priceList3')}</h5>
-                <h5>25.08 - 17.09</h5>
+                <h5>27.08 - 17.09</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -213,7 +213,7 @@ const PriceList = () => {
                 <h5>{t('priceList3')}</h5>
                 <h5>07.06 - 11.06</h5>
                 <h5>{t('priceList3')}</h5>
-                <h5>07.07 - 25.08</h5>
+                <h5>07.07 - 27.08</h5>
               </div>
             </div>
           </div>
@@ -333,9 +333,9 @@ const PriceList = () => {
             <tr>
               <td>{t('priceList3')}</td>
               <td>3.05 - 26.05</td>
-              <td>25.08 - 17.09</td>
+              <td>27.08 - 17.09</td>
               <td>11.06 - 07.07</td>
-              <td>07.07 - 25.08</td>
+              <td>07.07 - 27.08</td>
             </tr>
           </table>
         </div>
