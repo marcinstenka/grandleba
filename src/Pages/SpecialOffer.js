@@ -12,16 +12,16 @@ const ForGroups = () => {
       <Navbar isMobile={isMobile} />
       <div className="container">
         {isMobile && <Logo />}
-        {/* <div className="special-offer-section">
+         <div className="special-offer-section">
           <h3 className="header special-offer-header">WIELKANOC NAD MORZEM</h3>
-          <p className="subtext">15-18.04.2022 (3 noce)</p>
+          <p className="subtext">7-10.04.2023 (3 noce)</p>
           <ul className="special-offer-list">
-            <li className="special-offer-list-bold">15.04 Wielki Piątek</li>
+            <li className="special-offer-list-bold">07.04 Wielki Piątek</li>
             <ul className="special-offer-list">
               <li>Przyjazd gości</li>
               <li>Obiadokolacja w formie bufetu 17:00 – 20:00</li>
             </ul>
-            <li className="special-offer-list-bold">16.04 Wielka Sobota</li>
+            <li className="special-offer-list-bold">08.04 Wielka Sobota</li>
             <ul className="special-offer-list">
               <li>Śniadanie - 8:00 – 10:30</li>
               <li>
@@ -32,7 +32,7 @@ const ForGroups = () => {
               <li>Obiadokolacja w formie bufetu - 17:00 – 20:00</li>
             </ul>
             <li className="special-offer-list-bold">
-              17.04 Niedziela Wielkanocna
+              09.04 Niedziela Wielkanocna
             </li>
             <ul className="special-offer-list">
               <li>
@@ -48,7 +48,7 @@ const ForGroups = () => {
               </li>
             </ul>
             <li className="special-offer-list-bold">
-              18.04 Poniedziałek Wielkanocny
+              10.04 Poniedziałek Wielkanocny
             </li>
             <ul className="special-offer-list">
               <li>Uroczyste śniadanie wielkanocne – 8:00 – 11:00</li>
@@ -59,16 +59,18 @@ const ForGroups = () => {
             </ul>
           </ul>
           <p className="text">
-            Napoje (woda, soki), kawa, herbata do każdego z posiłków.
+            Napoje woda, soki, kawa, herbata do każdego z posiłków.
             <br />
-            Koszt pobytu osoby dorosłej w pokoju 2 os. – 850 zł (1700 zł pobyt
+            Koszt pobytu osoby dorosłej w pokoju 2 os. – 1095 zł (2190 zł pobyt
             dla dwóch osób).
             <br />
-            Koszt pobytu osoby dorosłej w pokoju 1 os. – 1100 zł.
+            Koszt pobytu osoby dorosłej w pokoju 1 os. – 1350 zł.
             <br />
             Dopłata do pokoju z balkonem 50 zł/doba.
+            <br />
+            Dostawka 750 zł.
           </p>
-        </div> */}
+        </div> 
         <h1 className="header special-offer-header">{t('specialOffer1')}</h1>
         <p className="text">
           {t('specialOffer2')}
