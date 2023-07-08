@@ -27,8 +27,6 @@ const PriceList = () => {
                 <h5>{t('priceList-price1')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>-</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>-</h5>
                 <h5>{t('priceList-season4')}</h5>
                 <h5>-</h5>
               </div>
@@ -40,10 +38,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price2')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price3')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price4')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price5')}</h5>
+                <h5>{t('priceList-price4')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -53,10 +49,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price6')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price7')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price8')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price9')}</h5>
+                <h5>{t('priceList-price8')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -66,10 +60,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price10')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price11')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price12')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price13')}</h5>
+                <h5>{t('priceList-price12')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -79,10 +71,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price14')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price15')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price16')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price17')}</h5>
+                <h5>{t('priceList-price16')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -92,10 +82,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price18')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price19')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price20')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price21')}</h5>
+                <h5>{t('priceList-price20')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -105,10 +93,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price22')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price23')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price24')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price25')}</h5>
+                <h5>{t('priceList-price24')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -118,10 +104,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price26')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price27')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price28')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price29')}</h5>
+                <h5>{t('priceList-price28')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -131,10 +115,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price30')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price31')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price32')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price33')}</h5>
+                <h5>{t('priceList-price32')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -144,10 +126,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price34')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price35')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price36')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price37')}</h5>
+                <h5>{t('priceList-price36')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -157,10 +137,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price38')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price39')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price40')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price41')}</h5>
+                <h5>{t('priceList-price40')}</h5>
               </div>
             </div>
             <div className="mobile-table-item">
@@ -170,10 +148,8 @@ const PriceList = () => {
                 <h5>{t('priceList-price42')}</h5>
                 <h5>{t('priceList-season2')}</h5>
                 <h5>{t('priceList-price43')}</h5>
-                <h5>{t('priceList-season3')}</h5>
-                <h5>{t('priceList-price44')}</h5>
                 <h5>{t('priceList-season4')}</h5>
-                <h5>{t('priceList-price45')}</h5>
+                <h5>{t('priceList-price44')}</h5>
               </div>
             </div>
           </div>
@@ -184,7 +160,7 @@ const PriceList = () => {
               <h4>{t('priceList-season1')}</h4>
               <div className="table-item-grid">
                 <h5>{t('priceList3')}</h5>
-                <h5>17.09 - 28.05 {t('priceList4')}</h5>
+                <h5>17.09 - 28.04 {t('priceList4')}</h5>
                 <h5>{t('priceList3')}</h5>
                 <h5>3.05-26.05</h5>
               </div>
@@ -195,25 +171,16 @@ const PriceList = () => {
                 <h5>{t('priceList3')}</h5>
                 <h5>26.05 - 07.06</h5>
                 <h5>{t('priceList3')}</h5>
-                <h5>27.08 - 17.09</h5>
-              </div>
-            </div>
-            <div className="mobile-table-item">
-              <h4>{t('priceList-season3')}</h4>
-              <div className="table-item-grid">
-                <h5>{t('priceList3')}</h5>
-                <h5>28.04 - 03.05</h5>
-                <h5>{t('priceList3')}</h5>
-                <h5>11.06 - 07.07 </h5>
+                <h5>20.08 - 17.09</h5>
               </div>
             </div>
             <div className="mobile-table-item">
               <h4>{t('priceList-season4')}</h4>
               <div className="table-item-grid">
                 <h5>{t('priceList3')}</h5>
-                <h5>07.06 - 11.06</h5>
+                <h5>28.04 - 03.05</h5>
                 <h5>{t('priceList3')}</h5>
-                <h5>07.07 - 27.08</h5>
+                <h5>08.07 - 20.08</h5>
               </div>
             </div>
           </div>
@@ -224,13 +191,11 @@ const PriceList = () => {
               <td>{t('priceList-header')} GRAND ŁEBA 2022/23</td>
               <td>{t('priceList-season1')}</td>
               <td>{t('priceList-season2')}</td>
-              <td>{t('priceList-season3')}</td>
               <td>{t('priceList-season4')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type1')}</td>
               <td>{t('priceList-price1')}</td>
-              <td>-</td>
               <td>-</td>
               <td>-</td>
             </tr>
@@ -239,77 +204,66 @@ const PriceList = () => {
               <td>{t('priceList-price2')}</td>
               <td>{t('priceList-price3')}</td>
               <td>{t('priceList-price4')}</td>
-              <td>{t('priceList-price5')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type3')}</td>
               <td>{t('priceList-price6')}</td>
               <td>{t('priceList-price7')}</td>
               <td>{t('priceList-price8')}</td>
-              <td>{t('priceList-price9')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type4')}</td>
               <td>{t('priceList-price10')}</td>
               <td>{t('priceList-price11')}</td>
               <td>{t('priceList-price12')}</td>
-              <td>{t('priceList-price13')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type5')}</td>
               <td>{t('priceList-price14')}</td>
               <td>{t('priceList-price15')}</td>
               <td>{t('priceList-price16')}</td>
-              <td>{t('priceList-price17')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type6')}</td>
               <td>{t('priceList-price18')}</td>
               <td>{t('priceList-price19')}</td>
               <td>{t('priceList-price20')}</td>
-              <td>{t('priceList-price21')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type7')}</td>
               <td>{t('priceList-price22')}</td>
               <td>{t('priceList-price23')}</td>
               <td>{t('priceList-price24')}</td>
-              <td>{t('priceList-price25')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type8')}</td>
               <td>{t('priceList-price26')}</td>
               <td>{t('priceList-price27')}</td>
               <td>{t('priceList-price28')}</td>
-              <td>{t('priceList-price29')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type9')}</td>
               <td>{t('priceList-price30')}</td>
               <td>{t('priceList-price31')}</td>
               <td>{t('priceList-price32')}</td>
-              <td>{t('priceList-price33')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type10')}</td>
               <td>{t('priceList-price34')}</td>
               <td>{t('priceList-price35')}</td>
               <td>{t('priceList-price36')}</td>
-              <td>{t('priceList-price37')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type11')}</td>
               <td>{t('priceList-price38')}</td>
               <td>{t('priceList-price39')}</td>
               <td>{t('priceList-price40')}</td>
-              <td>{t('priceList-price41')}</td>
             </tr>
             <tr>
               <td>{t('priceList-type12')}</td>
               <td>{t('priceList-price42')}</td>
               <td>{t('priceList-price43')}</td>
               <td>{t('priceList-price44')}</td>
-              <td>{t('priceList-price45')}</td>
             </tr>
           </table>
           <p>{t('priceList1')}</p>
@@ -318,7 +272,6 @@ const PriceList = () => {
               <td></td>
               <td>{t('priceList-season1')}</td>
               <td>{t('priceList-season2')}</td>
-              <td>{t('priceList-season3')}</td>
               <td>{t('priceList-season4')}</td>
             </tr>
             <tr>
@@ -328,14 +281,12 @@ const PriceList = () => {
               </td>
               <td>26.05 - 07.06</td>
               <td>28.04 - 03.05</td>
-              <td>07.06 - 11.06</td>
             </tr>
             <tr>
               <td>{t('priceList3')}</td>
               <td>3.05 - 26.05</td>
-              <td>27.08 - 17.09</td>
-              <td>11.06 - 07.07</td>
-              <td>07.07 - 27.08</td>
+              <td>20.08 - 17.09</td>
+              <td>08.07 - 20.08</td>
             </tr>
           </table>
         </div>
